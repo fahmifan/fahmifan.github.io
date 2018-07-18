@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on fahmifan&#39;s blog</title>
+    <link>https://fahmifan.github.io/blog/</link>
+    <description>Recent content in Blog on fahmifan&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://fahmifan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make CV from html-css-js.md</title>
+      <link>https://fahmifan.github.io/blog/make-cv-from-html-css-js.md/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/make-cv-from-html-css-js.md/</guid>
+      <description>this is the command that does the job. Well for now it only ouput properly in image format. I am still looking for solution to output in pdf format. This is using Wkhtmltopdf :
+wkhtmltoimage --images --javascript-delay 5000 http://localhost:5500/ testcv2.png
+I&amp;rsquo;m using local server for this and code in vscode :D</description>
+    </item>
+    
+    <item>
+      <title>Trying mobile app development</title>
+      <link>https://fahmifan.github.io/blog/trying-mobile-app-development/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/trying-mobile-app-development/</guid>
+      <description>At school we were told to make a mobile app for android. The teacher said we can use Java, because this is for the lecture of OO Programming 2, the OO Programming 1 was about basic Java SE. For this lecture we will develop mobile app alone not in a team. I proposed to my teacher if i can used React Native for developing later and he said yes. So, i run into React Native page and set up for local dev.</description>
+    </item>
+    
+    <item>
+      <title>One sprint, One App</title>
+      <link>https://fahmifan.github.io/blog/one-sprint-one-app/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/one-sprint-one-app/</guid>
+      <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
+    </item>
+    
+  </channel>
+</rss>
