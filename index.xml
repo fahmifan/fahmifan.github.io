@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on fahmifan&#39;s blog</title>
-    <link>https://fahmifan.github.io/blog/</link>
-    <description>Recent content in Blog on fahmifan&#39;s blog</description>
+    <title>fahmifan&#39;s blog</title>
+    <link>https://fahmifan.github.io/</link>
+    <description>Recent content on fahmifan&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 19 Jul 2018 03:29:18 +0700</lastBuildDate>
     
-	<atom:link href="https://fahmifan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -47,6 +47,16 @@ I&amp;rsquo;m using local server for this and code in vscode :D</description>
       
       <guid>https://fahmifan.github.io/blog/one-sprint-one-app/</guid>
       <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://fahmifan.github.io/about/</link>
+      <pubDate>Thu, 01 Feb 2018 01:37:37 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/about/</guid>
+      <description>A passionate junior developer. Students at University of Padjadjaran.
+Android Development using Android Studio and Java Web Development using Codeigniter 3 or ReactJs  </description>
     </item>
     
   </channel>
