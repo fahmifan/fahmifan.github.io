@@ -28,6 +28,12 @@
   </url>
   
   <url>
+    <loc>https://fahmifan.github.io/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://fahmifan.github.io/blog/</loc>
     <lastmod>2018-07-19T03:29:18+07:00</lastmod>
     <priority>0</priority>
@@ -40,12 +46,6 @@
   
   <url>
     <loc>https://fahmifan.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fahmifan.github.io/</loc>
-    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
