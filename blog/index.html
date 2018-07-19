@@ -68,6 +68,7 @@ footer, header, hgroup, menu, nav, section, div.column {
 }
 body {
   line-height: 1;
+  box-sizing: border-box;
 }
 ol, ul {
   list-style: none;
@@ -197,13 +198,14 @@ div.header .content {
 div.header .container .logo {
   max-width: 100px;
   margin-left: -2em;
-  font-size: 100% !important;
 }
+
 .logo {
-  padding-right: 8px;  
   width: 100px;
-  /* height: 100px; */
+  padding-right: 8px;
+  margin-left: 0px !important;
 }
+
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
@@ -217,19 +219,9 @@ div.header .name {
   font-smoothing: antialiased;
   color: #333333;
 }
-
-.name {
-  padding-top: 0px !important;
-}
-
 div.header nav {
   margin-bottom: 16px;
 }
-
-.container > a {
-  padding-top: 8px;  
-} 
-
 div.header nav ul {
   list-style: none;
   text-align: center;
@@ -320,9 +312,6 @@ div.main .container {
 div.main .content {
   color: #111111;
   font-size: 16px;
-}
-.content nav {
-  margin-bottom: 4px;
 }
 div.main .content .title-container {
   display: -webkit-flex;
@@ -1120,7 +1109,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                         
                             <li class="post-item">
     <span class="meta">Jul 12, 2018</span>
-    <a href="https://fahmifan.github.io/blog/make-cv-from-html-css-js.md/"><span>Make CV from html-css-js.md</span></a>
+    <a href="https://fahmifan.github.io/blog/make-resume-from-html-css-js.md/"><span>Make resume from html-css-js.md</span></a>
 </li>
 
                         
