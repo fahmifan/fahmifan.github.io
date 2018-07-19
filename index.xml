@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Learn Material Design</title>
-      <link>https://fahmifan.github.io/blog/learn-material-design/</link>
+      <title>New Project in Android</title>
+      <link>https://fahmifan.github.io/blog/new-project-in-android/</link>
       <pubDate>Thu, 19 Jul 2018 16:40:15 +0700</pubDate>
       
-      <guid>https://fahmifan.github.io/blog/learn-material-design/</guid>
+      <guid>https://fahmifan.github.io/blog/new-project-in-android/</guid>
       <description>I have a project with my friends for MTQMN DAQ. It&amp;rsquo;s an android app with a feature kind of to detect your recitation. It&amp;rsquo;s still WIP and i worked on the android development, while my friends work on Machine Learning and as a project manager. This project is challenging, because i am new to android development and trying to make a good decision about architecture and design is not easy. I need to read more about design pattern, RxJava2, and material design.</description>
     </item>
     
