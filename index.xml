@@ -6,10 +6,19 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 19 Jul 2018 13:22:07 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 16:40:15 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learn Material Design</title>
+      <link>https://fahmifan.github.io/blog/learn-material-design/</link>
+      <pubDate>Thu, 19 Jul 2018 16:40:15 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/learn-material-design/</guid>
+      <description>I have a project with my friends for MTQMN DAQ. It&amp;rsquo;s an android app with a feature kind of to detect your recitation. It&amp;rsquo;s still WIP and i worked on the android development, while my friends work on Machine Learning and as a project manager. This project is challenging, because i am new to android development and trying to make a good decision about architecture and design is not easy. I need to read more about design pattern, RxJava2, and material design.</description>
+    </item>
     
     <item>
       <title>Portfolio</title>
