@@ -6,10 +6,20 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 19 Jul 2018 16:40:15 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 16:01:57 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tokopedia Devcamp: Online Test</title>
+      <link>https://fahmifan.github.io/blog/tokopedia-devcamp-online-test/</link>
+      <pubDate>Mon, 23 Jul 2018 16:01:57 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/tokopedia-devcamp-online-test/</guid>
+      <description>So, today i just did my online test for Tokopedia Devcamp 2018. This is my second time do online test, and it not that bad. Before, i was always feeling that i woludn&amp;rsquo;t survive on algorithmic test type. The reason for this is because when i take algorithm class in my first year, i did not that good. Sometimes i get overwhelmed to solve a pyramid stars.
+ &amp;ldquo;At least I&amp;rsquo;ve been trying hard&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>New Project in Android</title>
