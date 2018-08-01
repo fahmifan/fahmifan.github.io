@@ -18,13 +18,13 @@
   </url>
   
   <url>
-    <loc>https://fahmifan.github.io/portfolio/</loc>
-    <lastmod>2018-07-19T13:22:07+07:00</lastmod>
+    <loc>https://fahmifan.github.io/blog/move-blog-to-hugo/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fahmifan.github.io/blog/move-blog-to-hugo/</loc>
-    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <loc>https://fahmifan.github.io/projects/mandala-app-prototype/</loc>
+    <lastmod>2018-07-12T06:51:57+07:00</lastmod>
   </url>
   
   <url>
@@ -66,6 +66,12 @@
   
   <url>
     <loc>https://fahmifan.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/projects/</loc>
+    <lastmod>2018-07-12T06:51:57+07:00</lastmod>
     <priority>0</priority>
   </url>
   

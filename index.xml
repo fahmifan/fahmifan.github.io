@@ -41,21 +41,23 @@ A/B Testing Using Firebase Remote Config In this first talk they told us what is
     </item>
     
     <item>
-      <title>Portfolio</title>
-      <link>https://fahmifan.github.io/portfolio/</link>
-      <pubDate>Thu, 19 Jul 2018 13:22:07 +0700</pubDate>
-      
-      <guid>https://fahmifan.github.io/portfolio/</guid>
-      <description> Under construction </description>
-    </item>
-    
-    <item>
       <title>Move Blog to Hugo</title>
       <link>https://fahmifan.github.io/blog/move-blog-to-hugo/</link>
       <pubDate>Thu, 19 Jul 2018 03:29:18 +0700</pubDate>
       
       <guid>https://fahmifan.github.io/blog/move-blog-to-hugo/</guid>
       <description>So, i just tried Hugo and it was super easy to build static web. The installation is faster and easier compare to jekyll. The build time is also fast. Will try to explore later. The deploy is easy, you only need to write some script there is example from Hugo if you using Unix, and then run the script. If you using Github for User , after the script run then it will push into the master branch and finally updated into your github pages.</description>
+    </item>
+    
+    <item>
+      <title>Mandala App Prototype</title>
+      <link>https://fahmifan.github.io/projects/mandala-app-prototype/</link>
+      <pubDate>Thu, 12 Jul 2018 06:51:57 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/projects/mandala-app-prototype/</guid>
+      <description> Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
+Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation
+  App Screenshot </description>
     </item>
     
     <item>
