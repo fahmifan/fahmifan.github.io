@@ -6,10 +6,21 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 26 Jul 2018 05:47:03 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 16:45:48 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Download Youtube Mp3 File Using `youtube-dl`</title>
+      <link>https://fahmifan.github.io/blog/download-youtube-mp3-file-using-youtube-dl/</link>
+      <pubDate>Sat, 15 Sep 2018 16:45:48 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/download-youtube-mp3-file-using-youtube-dl/</guid>
+      <description>This is the command to download it
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt;  if you using zsh or fish wrap the url using quotes &#39;url&#39;
+Happy downloading</description>
+    </item>
     
     <item>
       <title>Adb Meetup 4</title>
