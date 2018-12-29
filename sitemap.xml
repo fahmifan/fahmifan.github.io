@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://miun173.github.io/projects/2018/chat-app/</loc>
+    <lastmod>2018-12-29T10:01:01+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/blog/bekraf-developer-conference/</loc>
     <lastmod>2018-12-04T08:46:23+07:00</lastmod>
   </url>
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://miun173.github.io/</loc>
-    <lastmod>2018-12-04T08:46:23+07:00</lastmod>
+    <lastmod>2018-12-29T10:01:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,7 +86,7 @@
   
   <url>
     <loc>https://miun173.github.io/projects/</loc>
-    <lastmod>2018-07-12T06:51:57+07:00</lastmod>
+    <lastmod>2018-12-29T10:01:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,20 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 04 Dec 2018 08:46:23 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Dec 2018 10:01:01 +0700</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chat App</title>
+      <link>https://miun173.github.io/projects/2018/chat-app/</link>
+      <pubDate>Sat, 29 Dec 2018 10:01:01 +0700</pubDate>
+      
+      <guid>https://miun173.github.io/projects/2018/chat-app/</guid>
+      <description>Simple chat app using React + Styled Components
+Github</description>
+    </item>
     
     <item>
       <title>Bekraf Developer Conference</title>
