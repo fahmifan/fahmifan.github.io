@@ -6,10 +6,19 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 29 Dec 2018 10:01:01 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 03 Jan 2019 17:06:30 +0700</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Node 01</title>
+      <link>https://miun173.github.io/blog/node-01/</link>
+      <pubDate>Thu, 03 Jan 2019 17:06:30 +0700</pubDate>
+      
+      <guid>https://miun173.github.io/blog/node-01/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Chat App</title>
