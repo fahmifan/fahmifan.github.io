@@ -1,9 +1,7 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-	<meta name="generator" content="Hugo 0.55.6" />
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,24 +15,24 @@
 <meta property="og:site_name" content="A Blog" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miun173.github.io/" />
-<meta property="og:title" content="A Blog" />
-<meta property="twitter:title" content="A Blog">
+<meta property="og:url" content="https://miun173.github.io/blog/domain-driven-design-1/" />
+<meta property="og:title" content="Domain Driven Design (1)" />
+<meta property="twitter:title" content="Domain Driven Design (1)">
 
     <meta property="og:image" content="https://miun173.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:image" content="https://miun173.github.io/img/banner.png">
 
-<meta property="og:description" content="Miun173 personal blog">
-<meta property="twitter:description" content="Miun173 personal blog">
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
 
 <title>
 
 
-    A Blog
+     A Blog - Domain Driven Design (1) 
 
 </title>
-<link rel="canonical" href="https://miun173.github.io/">
+<link rel="canonical" href="https://miun173.github.io/blog/domain-driven-design-1/">
 
 
 <style media="screen">
@@ -1078,8 +1076,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://miun173.github.io/index.xml" rel="alternate" type="application/rss+xml" title="A Blog" />
-
 
 </head>
 
@@ -1087,7 +1083,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <body>
 <main>
     
-    <div class="header header-home column">
+    <div class="header column">
     
         <div class="container">
             
@@ -1122,77 +1118,117 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         </div>
     </div>
 
-    <div class="main column">
-        <div class="container">
-            <div class="content">
-                
-    
-                
-                    <div class="posts">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Domain Driven Design (1)
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Mon Jun 24 2019 08:06:30 WIB">Jun 24, 2019</div>
                     
+                        
                     
-                        <div class="page-heading">Latest posts</div>
+                    <div class="reading-time middot">2 minute read</div>
+                    <div class="tags">
                         <ul>
-                        
-                            <li class="groupby">Jun, 2019</li>
-                            
-                                <li class="post-item">
-    <span class="meta">Jun 24, 2019</span>
-    <a href="https://miun173.github.io/blog/domain-driven-design-1/"><span>Domain Driven Design (1)</span></a>
-</li>
-
-                            
-                        
-                            <li class="groupby">Dec, 2018</li>
-                            
-                                <li class="post-item">
-    <span class="meta">Dec 4, 2018</span>
-    <a href="https://miun173.github.io/blog/bekraf-developer-conference/"><span>Bekraf Developer Conference</span></a>
-</li>
-
-                            
-                        
-                            <li class="groupby">Sep, 2018</li>
-                            
-                                <li class="post-item">
-    <span class="meta">Sep 15, 2018</span>
-    <a href="https://miun173.github.io/blog/download-youtube-mp3-file-using-youtube-dl/"><span>Download Youtube Mp3 File Using `youtube-dl`</span></a>
-</li>
-
-                            
-                        
-                            <li class="groupby">Jul, 2018</li>
-                            
-                                <li class="post-item">
-    <span class="meta">Jul 26, 2018</span>
-    <a href="https://miun173.github.io/blog/adb-meetup-4/"><span>Adb Meetup 4</span></a>
-</li>
-
-                            
-                                <li class="post-item">
-    <span class="meta">Jul 23, 2018</span>
-    <a href="https://miun173.github.io/blog/tokopedia-devcamp-online-test/"><span>Tokopedia Devcamp: Online Test</span></a>
-</li>
-
-                            
-                        
+                          
                         </ul>
-    
-                        
-                            <a href="./blog/" class="see-more">See more ...</a>
-                        
-                    
                     </div>
-                
-    
-                <div class="best-posts">
-                
-                
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="markdown">
+                
+    
+    
+
+<p>Dalam kehidupan, manusia tidak lepas dari pekerjaan. Pekerjaan yang dilakukan pun terkadang berulang dan memiliki pola tersendiri. Ada kalanya bertemu masalah kecepatan dan kapasitas dalam bekerja. Pekerjaan atau proses yang berulang dapat dilakukan otomasi menggunakan software. Selain itu, software dapat digunakan dalam pemecahan masalah.</p>
+
+<p>Dalam membuat software, harus mengerti dulu apa yang dibutuhkan oleh suatu bisnis atau pekerjaan. Untuk dapat membuat software yang tepat guna, diperlukan kolaborasi antara engineer dan stake holder. Kunci dari kolaborasi yang apik adalah komunikasi yang dapat saling dipahami. DDD atau <em>Domain Driven Design</em>, sebuah prinsip pembuatan software dari tahap desain sampai development yang berkolaborasi dengan <em>domain expert</em> (ahli). Tanpa penguasaan yang mendalam tentang suatu permasalahan, maka sulit untuk mengatakan solusi yang dibuat dapat tepat guna. Di sini lah peran seorang domain expert menjadi penting.</p>
+
+<h1 id="prinsip-ddd">Prinsip DDD</h1>
+
+<h2 id="ubiquitous-language">Ubiquitous Language</h2>
+
+<p><em>Ubiquitous Language</em>, bahasa yang dapat dimengerti oleh semua orang. Memadukan antara bahasa teknis dengan jargon-jargon di dunia bisnis. Dapat dikatakan juga, membuat desain software yang dimengerti oleh domain expert, jika perlu sampai ke level abstraksi kodingnya.</p>
+
+<h2 id="model-driven-design">Model Driven Design</h2>
+
+<p>Dari permasalahan yang sudah dipahami, perlu dibuat permodelan yang dapat diimplementasikan oleh developer. Beberapa pondasi dari pembuatan model ini adalah:</p>
+
+<h3 id="layered-architecture">Layered Architecture</h3>
+
+<p>Memisahkan bagian-bagian dalam software sesuai dengan peruntukannya. Jika pernah membuat sebuah aplikasi website dinamis, tak jarang berjumpa dengan konsep MVC atau Model View Controller yang merupakan sebuah arsitektur software. Berbeda dengan MVC, Layered Architecture ini lebih kepada mengisolasi kode logik bisnis yang inti dari dependensi luar. Dependensi ini dapat berupa akses ke database, user interface (API), pustaka pihak ketiga, dsb. Bagian yang diisolasi ini disebut sebagai layer aplikasi.</p>
+
+<h2 id="refactoring-berkelanjutan">Refactoring berkelanjutan</h2>
+
+<p>Dalam membuat kodingan, sering kali solusi pertama yang dibuat kurang bagus. Baik dari segi efektif nya atau kejelasan maksud kodingan. Untuk itu, refactoring berkelanjutan menjadi hal yang sering dan perlu dilakukan.</p>
+
+<h2 id="bounded-context">Bounded Context</h2>
+
+<p>Bagian ini belum penulis baca dan pahami dan akan diupdate di kesempatan berikutnya</p>
+
+<h1 id="kesimpulan">Kesimpulan</h1>
+
+<p>Dari tulisan pendek ini, semoga dapat memicu sedikit rasa penasaran pembaca tentang membuat Software yang andal melalui DDD ini. Ini merupakan bagian satu, selanjutnya penulis akan coba praktik langsung pada proses pembuatan sebuah aplikasi.</p>
+
+<p>Thanks for reading</p>
+
+
+                <br>
+            </div>
+            
+            
+                <div class="navigation">
+                    
+                    <div>
+                        <img class="icon" src="https://miun173.github.io/img/back.svg" alt="back" />
+                        <a href="https://miun173.github.io/blog/bekraf-developer-conference/">Bekraf Developer Conference</a>
+                    </div>
+                    
+                    <div style="width: 100%;"></div>
+                    
+                </div>
+            
+            <br>
+            
+
+            
+
+            
+
+            <div id="disqus_thread" class="main post non-narrow zero-top-spacing column"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://https-fahmifan-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     </div>
-    <div class="footer column">
+</div>
+
+
+<div class="footer column">
     <div class="container">
 
         
@@ -1287,5 +1323,3 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 </body>
 </html>
-
-

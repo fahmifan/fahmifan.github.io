@@ -3,13 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://miun173.github.io/blog/node-01/</loc>
-    <lastmod>2019-01-03T17:06:30+07:00</lastmod>
+    <loc>https://miun173.github.io/</loc>
+    <lastmod>2019-06-24T08:06:30+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/blog/</loc>
+    <lastmod>2019-06-24T08:06:30+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/blog/domain-driven-design-1/</loc>
+    <lastmod>2019-06-24T08:06:30+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://miun173.github.io/projects/2018/chat-app/</loc>
     <lastmod>2018-12-29T10:01:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/projects/</loc>
+    <lastmod>2018-12-29T10:01:01+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -78,25 +96,7 @@
   </url>
   
   <url>
-    <loc>https://miun173.github.io/</loc>
-    <lastmod>2019-01-03T17:06:30+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://miun173.github.io/blog/</loc>
-    <lastmod>2019-01-03T17:06:30+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://miun173.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://miun173.github.io/projects/</loc>
-    <lastmod>2018-12-29T10:01:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   

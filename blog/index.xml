@@ -6,18 +6,19 @@
     <description>Recent content in Blog on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 03 Jan 2019 17:06:30 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 08:06:30 +0700</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Node 01</title>
-      <link>https://miun173.github.io/blog/node-01/</link>
-      <pubDate>Thu, 03 Jan 2019 17:06:30 +0700</pubDate>
+      <title>Domain Driven Design (1)</title>
+      <link>https://miun173.github.io/blog/domain-driven-design-1/</link>
+      <pubDate>Mon, 24 Jun 2019 08:06:30 +0700</pubDate>
       
-      <guid>https://miun173.github.io/blog/node-01/</guid>
-      <description></description>
+      <guid>https://miun173.github.io/blog/domain-driven-design-1/</guid>
+      <description>Dalam kehidupan, manusia tidak lepas dari pekerjaan. Pekerjaan yang dilakukan pun terkadang berulang dan memiliki pola tersendiri. Ada kalanya bertemu masalah kecepatan dan kapasitas dalam bekerja. Pekerjaan atau proses yang berulang dapat dilakukan otomasi menggunakan software. Selain itu, software dapat digunakan dalam pemecahan masalah.
+Dalam membuat software, harus mengerti dulu apa yang dibutuhkan oleh suatu bisnis atau pekerjaan. Untuk dapat membuat software yang tepat guna, diperlukan kolaborasi antara engineer dan stake holder.</description>
     </item>
     
     <item>
