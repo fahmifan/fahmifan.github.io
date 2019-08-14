@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -70,29 +69,6 @@ footer, header, hgroup, menu, nav, section, div.column {
 }
 body {
   line-height: 1;
-  box-sizing: border-box;
-  background: #efefef;
-}
-@media (max-width: 425px) {
-  main {
-    background: #fefefe !important;
-    width: 100% !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 425px) {
-  main {
-    background: #fefefe !important;
-    width: 70% !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }  
 }
 ol, ul {
   list-style: none;
@@ -226,8 +202,7 @@ div.header .container .logo {
 
 .logo {
   width: 100px;
-  padding-right: 8px;
-  margin-left: 0px !important;
+  padding: 8px;
 }
 
 div.header .name {
@@ -349,7 +324,7 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  /* margin-bottom: 1em; */
+  margin-bottom: 4em;
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -942,7 +917,7 @@ display: block;
 }
 div.main.post {
 padding-top: 60px;
-padding-bottom: 16px;
+padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
@@ -1085,114 +1060,117 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 <body>
-<main>
-    
-    <div class="header header-home column">
-    
-        <div class="container">
-            
-            <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
-            
-            <div class="content">
-                <a href="https://miun173.github.io/"><div class="name"><h1>A Blog</h1></div></a>
-                <nav>
-                    <ul>
-                        
-                            <li><a href="https://miun173.github.io/blog/">Blog</a></li>
-                        
-                        
-                            
-                                
-                            
+
+
+<div class="header header-home column">
+
+    <div class="container">
+        
+        <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
+        
+        <div class="content">
+            <a href="https://miun173.github.io/"><div class="name"><h1>A Blog</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <li><a href="https://miun173.github.io/blog/">Blog</a></li>
+                    
+                    
                         
                             
-                                
-                                <li><a href="https://miun173.github.io/projects">projects</a></li>
-                                
-                            
                         
+                    
                         
                             
-                                <li><a href="https://miun173.github.io/about/">About</a></li>
+                            <li><a href="https://miun173.github.io/projects">projects</a></li>
                             
                         
-                    </ul>
-                </nav>
-            </div>
+                    
+                    
+                        
+                            <li><a href="https://miun173.github.io/about/">About</a></li>
+                        
+                    
+                </ul>
+            </nav>
         </div>
     </div>
+</div>
 
-    <div class="main column">
-        <div class="container">
-            <div class="content">
+<div class="main column">
+    <div class="container">
+        <div class="content">
+            
+
+            
+                <div class="posts">
                 
-    
                 
-                    <div class="posts">
+                    <div class="page-heading">Latest posts</div>
+                    <ul>
                     
-                    
-                        <div class="page-heading">Latest posts</div>
-                        <ul>
+                        <li class="groupby">Jul, 2019</li>
                         
-                            <li class="groupby">Jun, 2019</li>
-                            
-                                <li class="post-item">
+                            <li class="post-item">
+    <span class="meta">Jul 9, 2019</span>
+    <a href="https://miun173.github.io/blog/background-job-worker/"><span>Background Job Worker</span></a>
+</li>
+
+                        
+                    
+                        <li class="groupby">Jun, 2019</li>
+                        
+                            <li class="post-item">
     <span class="meta">Jun 24, 2019</span>
     <a href="https://miun173.github.io/blog/domain-driven-design-1/"><span>Domain Driven Design (1)</span></a>
 </li>
 
-                            
                         
-                            <li class="groupby">Dec, 2018</li>
-                            
-                                <li class="post-item">
+                    
+                        <li class="groupby">Dec, 2018</li>
+                        
+                            <li class="post-item">
     <span class="meta">Dec 4, 2018</span>
     <a href="https://miun173.github.io/blog/bekraf-developer-conference/"><span>Bekraf Developer Conference</span></a>
 </li>
 
-                            
                         
-                            <li class="groupby">Sep, 2018</li>
-                            
-                                <li class="post-item">
+                    
+                        <li class="groupby">Sep, 2018</li>
+                        
+                            <li class="post-item">
     <span class="meta">Sep 15, 2018</span>
     <a href="https://miun173.github.io/blog/download-youtube-mp3-file-using-youtube-dl/"><span>Download Youtube Mp3 File Using `youtube-dl`</span></a>
 </li>
 
-                            
                         
-                            <li class="groupby">Jul, 2018</li>
-                            
-                                <li class="post-item">
+                    
+                        <li class="groupby">Jul, 2018</li>
+                        
+                            <li class="post-item">
     <span class="meta">Jul 26, 2018</span>
     <a href="https://miun173.github.io/blog/adb-meetup-4/"><span>Adb Meetup 4</span></a>
 </li>
 
-                            
-                                <li class="post-item">
-    <span class="meta">Jul 23, 2018</span>
-    <a href="https://miun173.github.io/blog/tokopedia-devcamp-online-test/"><span>Tokopedia Devcamp: Online Test</span></a>
-</li>
-
-                            
-                        
-                        </ul>
-    
-                        
-                            <a href="./blog/" class="see-more">See more ...</a>
                         
                     
-                    </div>
-                
-    
-                <div class="best-posts">
-                
+                    </ul>
+
+                    
+                        <a href="./blog/" class="see-more">See more ...</a>
+                    
                 
                 </div>
+            
+
+            <div class="best-posts">
+            
+            
             </div>
         </div>
     </div>
-    <div class="footer column">
+</div>
+<div class="footer column">
     <div class="container">
 
         
@@ -1287,5 +1265,4 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 </body>
 </html>
-
 

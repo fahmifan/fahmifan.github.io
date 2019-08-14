@@ -68,29 +68,6 @@ footer, header, hgroup, menu, nav, section, div.column {
 }
 body {
   line-height: 1;
-  box-sizing: border-box;
-  background: #efefef;
-}
-@media (max-width: 425px) {
-  main {
-    background: #fefefe !important;
-    width: 100% !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 425px) {
-  main {
-    background: #fefefe !important;
-    width: 70% !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }  
 }
 ol, ul {
   list-style: none;
@@ -224,8 +201,7 @@ div.header .container .logo {
 
 .logo {
   width: 100px;
-  padding-right: 8px;
-  margin-left: 0px !important;
+  padding: 8px;
 }
 
 div.header .name {
@@ -347,7 +323,7 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  /* margin-bottom: 1em; */
+  margin-bottom: 4em;
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -940,7 +916,7 @@ display: block;
 }
 div.main.post {
 padding-top: 60px;
-padding-bottom: 16px;
+padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
@@ -1081,42 +1057,42 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 <body>
-<main>
-    
-    <div class="header column">
-    
-        <div class="container">
-            
-            <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
-            
-            <div class="content">
-                <a href="https://miun173.github.io/"><div class="name"><h1>A Blog</h1></div></a>
-                <nav>
-                    <ul>
-                        
-                            <li><a href="https://miun173.github.io/blog/">Blog</a></li>
-                        
-                        
-                            
-                                
-                            
+
+
+<div class="header column">
+
+    <div class="container">
+        
+        <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
+        
+        <div class="content">
+            <a href="https://miun173.github.io/"><div class="name"><h1>A Blog</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <li><a href="https://miun173.github.io/blog/">Blog</a></li>
+                    
+                    
                         
                             
-                                
-                                <li><a href="https://miun173.github.io/projects">projects</a></li>
-                                
-                            
                         
+                    
                         
                             
-                                <li><a href="https://miun173.github.io/about/">About</a></li>
+                            <li><a href="https://miun173.github.io/projects">projects</a></li>
                             
                         
-                    </ul>
-                </nav>
-            </div>
+                    
+                    
+                        
+                            <li><a href="https://miun173.github.io/about/">About</a></li>
+                        
+                    
+                </ul>
+            </nav>
         </div>
     </div>
+</div>
 
 
 
@@ -1184,20 +1160,10 @@ It was openning in my college break, i was helping opening it, even tho i can&rs
             
 
             
-
-            <div id="disqus_thread" class="main post non-narrow zero-top-spacing column"></div>
-<script>
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://https-fahmifan-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     </div>
 </div>
+
 
 
 <div class="footer column">
@@ -1295,3 +1261,4 @@ s.setAttribute('data-timestamp', +new Date());
 
 </body>
 </html>
+

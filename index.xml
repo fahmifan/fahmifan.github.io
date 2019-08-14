@@ -6,10 +6,20 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 24 Jun 2019 08:06:30 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 08:06:42 +0700</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Background Job Worker</title>
+      <link>https://miun173.github.io/blog/background-job-worker/</link>
+      <pubDate>Tue, 09 Jul 2019 08:06:42 +0700</pubDate>
+      
+      <guid>https://miun173.github.io/blog/background-job-worker/</guid>
+      <description>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.
+Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</description>
+    </item>
     
     <item>
       <title>Domain Driven Design (1)</title>

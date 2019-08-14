@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
 <meta charset="utf-8">
-<title>404 - Page not found</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Miun173 personal blog">
+
+
+    <meta property="twitter:site" content="@miun173">
+
+<meta property="og:site_name" content="A Blog" />
+<meta property="og:locale" content="nn_NO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miun173.github.io/blog/background-job-worker/" />
+<meta property="og:title" content="Background Job Worker" />
+<meta property="twitter:title" content="Background Job Worker">
+
+    <meta property="og:image" content="https://miun173.github.io/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://miun173.github.io/img/banner.png">
+
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
+
+<title>
+
+
+     A Blog - Background Job Worker 
+
+</title>
+<link rel="canonical" href="https://miun173.github.io/blog/background-job-worker/">
 
 
 <style media="screen">
@@ -1023,34 +1053,227 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-<style>
-    .logo {
-    vertical-align: middle;
-    max-width: 300px;
-}
-.content {
-    margin: 3em auto;
-    text-align: center;
-}
-.header {
-    margin-left: initial;
-    margin-right: intial;
-    padding: 0 !important;
-}
-
-
-</style>
 </head>
+
+
 <body>
-    <img src=logo.png class="logo" alt="logo" />
-    <div class="container f04">
+
+
+<div class="header column">
+
+    <div class="container">
+        
+        <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
+        
         <div class="content">
-            <div class="header column">
-                <div class="name">404</div>
-            </div>
-            <div class="detail">The page you were looking for does not exist.</div>
-            <div class="suggestion"><a href="https://miun173.github.io/">Visit the home page</a></div>
+            <a href="https://miun173.github.io/"><div class="name"><h1>A Blog</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <li><a href="https://miun173.github.io/blog/">Blog</a></li>
+                    
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                            <li><a href="https://miun173.github.io/projects">projects</a></li>
+                            
+                        
+                    
+                    
+                        
+                            <li><a href="https://miun173.github.io/about/">About</a></li>
+                        
+                    
+                </ul>
+            </nav>
         </div>
     </div>
+</div>
+
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Background Job Worker
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Tue Jul 9 2019 08:06:42 WIB">Jul 9, 2019</div>
+                    
+                        
+                    
+                    <div class="reading-time middot">1 minute read</div>
+                    <div class="tags">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+    
+    <p>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.</p>
+
+<p>Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</p>
+
+<blockquote>
+<p>Ketika user mengupload gambar, resize terlebih dahulu baru simpan ke storage</p>
+</blockquote>
+
+<p>Dari requirement tersebut dapat dibagi menjadi:</p>
+
+<ul>
+<li>jalankan worker yang menunggu &ldquo;tugas&rdquo; masuk</li>
+<li>tunggu user selesai upload</li>
+<li>balas dengan status &ldquo;sedang diproses&rdquo; ke user dan kode http status 2xx</li>
+<li>jadwalkan &ldquo;tugas&rdquo; meresize gambar yang diupload ke worker. Bisa dengan memasukkan &ldquo;tugas&rdquo; ke dalam process antrian (queue)</li>
+<li>worker mengambil tugas dari antrian</li>
+<li>worker meresize gambar, lalu simpan ke dalam storage</li>
+</ul>
+
+<p>Dengan menggunakan worker aplikasi menjadi lebih cepat dalam memberikan balikan ke user &amp; mengurangi long running request yg menyebabkan bloking.</p>
+
+
+                <br>
+            </div>
+            
+            
+                <div class="navigation">
+                    
+                    <div>
+                        <img class="icon" src="https://miun173.github.io/img/back.svg" alt="back" />
+                        <a href="https://miun173.github.io/blog/domain-driven-design-1/">Domain Driven Design (1)</a>
+                    </div>
+                    
+                    <div style="width: 100%;"></div>
+                    
+                </div>
+            
+            <br>
+            
+
+            
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer column">
+    <div class="container">
+
+        
+
+        <div class="copyright">
+
+        
+
+        </div>
+        <div class="icons">
+
+        
+
+        
+
+        
+
+        
+            <a href="https://github.com/miun173" target="_blank">
+                <img class="icon" src="https://miun173.github.io/img/github.svg" alt="github" />
+            </a>
+        
+
+        
+            <a href="https://twitter.com/miun173" target="_blank">
+                <img class="icon" src="https://miun173.github.io/img/twitter.svg" alt="twitter" />
+            </a>
+        
+
+        
+            <a href="https://www.linkedin.com/in/fahmifan" target="_blank">
+                <img class="icon" src="https://miun173.github.io/img/linkedin.svg" alt="linkedin" />
+            </a>
+        
+
+        
+            <a href="mailto:fahmifan173@gmail.com">
+                <img class="icon" src="https://miun173.github.io/img/email.svg" alt="email" />
+            </a>
+        
+
+        
+            <a href="https://miun173.github.io/index.xml">
+                <img class="icon" src="https://miun173.github.io/img/rss.svg" alt="rss" />
+            </a>
+        
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Raleway:400,600,700', 'Merriweather:300,300i,700,700i', 'Ubuntu+Mono:400,700']
+    }
+  });
+</script>
+
+
+
+  <script src="https://miun173.github.io/js/highlight.min.js" defer></script>
+  
+
+
+
+  <script src="https://miun173.github.io/js/progressively.min.js" defer></script>
+
+
+
+
+
+
+
+
+<script>
+  window.onload = function() {
+    
+      hljs.initHighlighting();
+    
+    
+      progressively.init({delay: 30, throttle: 50});
+    
+    
+  };
+</script>
+
+
+
+
 </body>
 </html>
+
