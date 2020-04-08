@@ -1151,7 +1151,7 @@ Dimana ada <em>publisher</em> yang dapat mengirim sebuah pesan ke <em>Event Bus<
 <p>Jika kalian belum tahu tentang bahasa Golang, bisa cek <a href="https://dasarpemrogramangolang.novalagung.com/">Dasar Pemrograman Golang</a>.</p>
 </blockquote>
 
-<p>Yang akan kita jadikan kasus adalah order barang dan pyament pada sebuah <strong>Online shop</strong>. Ketika user membuat sebuah order maka akan dibuat sebuah payment.</p>
+<p>Yang akan kita jadikan kasus adalah order barang dan payment pada sebuah <strong>Online shop</strong>. Ketika user membuat sebuah order maka akan dibuat sebuah payment.</p>
 
 <pre><code>
 +-------------+
@@ -1221,7 +1221,7 @@ const (
 )
 </code></pre>
 
-<p>Selanjutnya, kita akan buat membuat package <code>service</code>. Ada tiga buat service yang dibuat yaitu <code>ProductService</code>, <code>OrderService</code> dan <code>PaymentService</code> yang semuanya merupakan <code>interface</code>.</p>
+<p>Selanjutnya, kita akan membuat package <code>service</code>. Ada tiga buah service yang dibuat yaitu <code>ProductService</code>, <code>OrderService</code> dan <code>PaymentService</code> yang semuanya merupakan <code>interface</code>.</p>
 
 <pre><code>└── service
     └── service.go
@@ -1289,7 +1289,7 @@ func (ps *productService) List() []model.Product {
     ├── order_service.go
 </code></pre>
 
-<p>Pada kode ini, terdapat field <code>bus</code> dengan tipe <code>*bus.Bus</code> yang digunakan untuk mempublish event/topic. pacakge yang digunakan adalah <code>github.com/mustafaturan/bus</code>. Argumen ke dua pada fungsi <code>Emit</code> adalah nama topic yg dipublish, di sini kita gunakan nama <code>order.created</code>. Fungsi <code>Emit</code> ini kita akan jalankan di dalam goroutine baru.</p>
+<p>Pada kode ini, terdapat field <code>bus</code> dengan tipe <code>*bus.Bus</code> yang digunakan untuk mempublish event/topic. pacakge yang digunakan adalah <code>github.com/mustafaturan/bus</code>. Argumen ke dua pada fungsi <code>Emit</code> adalah nama topic yg dipublish, di sini kita gunakan nama <code>order.created</code>.</p>
 
 <pre><code class="language-go">package service
 
@@ -1336,7 +1336,7 @@ func (o *orderService) CreateOrder(productIDs []int64) *model.Order {
 
 </code></pre>
 
-<p>Service yang dibuat selanjutnya adalah <code>payment_service</code>. Pada service ini, tedapat satu method <code>CreatePayment</code>.</p>
+<p>Service yang dibuat selanjutnya adalah <code>payment_service</code>. Pada service ini, terdapat satu method <code>CreatePayment</code>.</p>
 
 <pre><code class="language-go">package service
 
