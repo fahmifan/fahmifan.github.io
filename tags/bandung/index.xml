@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bandung on Miun173</title>
+    <link>https://miun173.github.io/tags/bandung/</link>
+    <description>Recent content in Bandung on Miun173</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 26 Jul 2018 05:47:03 +0700</lastBuildDate>
+    
+	<atom:link href="https://miun173.github.io/tags/bandung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adb Meetup 4</title>
+      <link>https://miun173.github.io/blog/adb-meetup-4/</link>
+      <pubDate>Thu, 26 Jul 2018 05:47:03 +0700</pubDate>
+      
+      <guid>https://miun173.github.io/blog/adb-meetup-4/</guid>
+      <description>So last night i attend my first Android Developer Meetup in Bandung from ADB that held in Dicoding Space. The topics are about &amp;ldquo;A/B Testing Using Firebase Remote Config&amp;rdquo; &amp;amp; &amp;ldquo;Make a Android Starterkit using Yeoman Generator&amp;rdquo;.
+A/B Testing Using Firebase Remote Config In this first talk they told us what is A/B testing, how to do it, and the technical part on do A/B testing using the Firebase Remote Config.</description>
+    </item>
+    
+  </channel>
+</rss>

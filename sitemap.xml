@@ -1,6 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://miun173.github.io/blog/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/blog/kerja-bahagia-dengan-ikigai/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/pendidikan/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/personal-development/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/</loc>
+    <lastmod>2020-05-17T16:04:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
   
   <url>
     <loc>https://miun173.github.io/blog/apa-itu-event-bus/</loc>
@@ -8,8 +43,27 @@
   </url>
   
   <url>
-    <loc>https://miun173.github.io/blog/</loc>
+    <loc>https://miun173.github.io/tags/event-bus/</loc>
     <lastmod>2020-04-05T15:43:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/programming/</loc>
+    <lastmod>2020-04-05T15:43:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/tutorial/</loc>
+    <lastmod>2020-04-05T15:43:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/app/</loc>
+    <lastmod>2019-07-09T08:06:42+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -18,8 +72,26 @@
   </url>
   
   <url>
+    <loc>https://miun173.github.io/tags/worker/</loc>
+    <lastmod>2019-07-09T08:06:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/ddd/</loc>
+    <lastmod>2019-06-24T08:06:30+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/blog/domain-driven-design-1/</loc>
     <lastmod>2019-06-24T08:06:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/konsep/</loc>
+    <lastmod>2019-06-24T08:06:30+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -30,11 +102,30 @@
   <url>
     <loc>https://miun173.github.io/projects/</loc>
     <lastmod>2018-12-29T10:01:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/bdc/</loc>
+    <lastmod>2018-12-04T08:46:23+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://miun173.github.io/blog/bekraf-developer-conference/</loc>
     <lastmod>2018-12-04T08:46:23+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/conference/</loc>
+    <lastmod>2018-12-04T08:46:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/seminar/</loc>
+    <lastmod>2018-12-04T08:46:23+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -48,8 +139,86 @@
   </url>
   
   <url>
+    <loc>https://miun173.github.io/tags/downloader/</loc>
+    <lastmod>2018-09-15T16:45:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/youtube/</loc>
+    <lastmod>2018-09-15T16:45:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/youtube-dl/</loc>
+    <lastmod>2018-09-15T16:45:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/ab-testing/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/adb/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/blog/adb-meetup-4/</loc>
     <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/android/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/bandung/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/meetup/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/yeoman/</loc>
+    <lastmod>2018-07-26T05:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/bootcamp/</loc>
+    <lastmod>2018-07-23T16:01:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/devcamp/</loc>
+    <lastmod>2018-07-23T16:01:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/test/</loc>
+    <lastmod>2018-07-23T16:01:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/tokopedia/</loc>
+    <lastmod>2018-07-23T16:01:57+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -58,8 +227,38 @@
   </url>
   
   <url>
+    <loc>https://miun173.github.io/tags/contest/</loc>
+    <lastmod>2018-07-19T16:40:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/blog/new-project-in-android/</loc>
     <lastmod>2018-07-19T16:40:15+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/project/</loc>
+    <lastmod>2018-07-19T16:40:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/blog/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/git/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/hugo/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -68,8 +267,38 @@
   </url>
   
   <url>
+    <loc>https://miun173.github.io/tags/starting/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/submodule/</loc>
+    <lastmod>2018-07-19T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/projects/mandala-app-prototype/</loc>
     <lastmod>2018-07-12T06:51:57+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/css/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/html/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/js/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -78,8 +307,56 @@
   </url>
   
   <url>
+    <loc>https://miun173.github.io/tags/resume/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/tips/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/tool/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/wkhtmltopdf/</loc>
+    <lastmod>2018-07-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/flutter/</loc>
+    <lastmod>2018-02-28T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/ideas/</loc>
+    <lastmod>2018-02-28T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/react-native/</loc>
+    <lastmod>2018-02-28T03:29:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miun173.github.io/blog/trying-mobile-app-development/</loc>
     <lastmod>2018-02-28T03:29:18+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miun173.github.io/tags/developement/</loc>
+    <lastmod>2018-02-12T03:29:18+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -93,21 +370,8 @@
   </url>
   
   <url>
-    <loc>https://miun173.github.io/</loc>
-    <lastmod>2018-02-01T01:37:37+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://miun173.github.io/blog/opening-bubur-resto/</loc>
     <lastmod>2017-08-16T15:35:17+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miun173.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://miun173.github.io/tags/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developement on Miun173</title>
+    <link>https://miun173.github.io/tags/developement/</link>
+    <description>Recent content in Developement on Miun173</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 12 Feb 2018 03:29:18 +0700</lastBuildDate>
+    
+	<atom:link href="https://miun173.github.io/tags/developement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>One sprint, One App</title>
+      <link>https://miun173.github.io/blog/one-sprint-one-app/</link>
+      <pubDate>Mon, 12 Feb 2018 03:29:18 +0700</pubDate>
+      
+      <guid>https://miun173.github.io/blog/one-sprint-one-app/</guid>
+      <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
+    </item>
+    
+  </channel>
+</rss>
