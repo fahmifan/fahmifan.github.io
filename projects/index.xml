@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Miun173</title>
+    <title>Projects on miun173</title>
     <link>https://miun173.github.io/projects/</link>
-    <description>Recent content in Projects on Miun173</description>
+    <description>Recent content in Projects on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 29 Dec 2018 10:01:01 +0700</lastBuildDate>
@@ -38,9 +38,8 @@ OPTA Admin (+Backend)</description>
       <pubDate>Thu, 12 Jul 2018 06:51:57 +0700</pubDate>
       
       <guid>https://miun173.github.io/projects/mandala-app-prototype/</guid>
-      <description> Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
-Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation
-  App Screenshot </description>
+      <description>Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
+Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation  App Screenshot </description>
     </item>
     
   </channel>

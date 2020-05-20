@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Event Bus on Miun173</title>
+    <title>Event Bus on miun173</title>
     <link>https://miun173.github.io/tags/event-bus/</link>
-    <description>Recent content in Event Bus on Miun173</description>
+    <description>Recent content in Event Bus on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 05 Apr 2020 15:43:31 +0700</lastBuildDate>

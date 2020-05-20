@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Miun173</title>
+    <title>Blog on miun173</title>
     <link>https://miun173.github.io/blog/</link>
-    <description>Recent content in Blog on Miun173</description>
+    <description>Recent content in Blog on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 17 May 2020 16:04:03 +0700</lastBuildDate>
@@ -18,7 +18,7 @@
       
       <guid>https://miun173.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
       <description>Hari ini gw menemukan artikel menarik yang ditulis oleh Iqbal Hariadi. Salah satu cara belajar yg skut adalah kita berguru pada role model. Yang pastinya, dia adalah sosok yg klop sama kita. Dari yang gw tau, orang-orang ini kalo ngobrol itu enak didenger, gampang dicerna, dan bisa jadi influencer buat banyak orang.
-Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;rdquo;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
+Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;quot;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ Track yg saya ikuti adalah Dicoding. Ada 4 sesi dalam track ini. Sesi pertama me
       
       <guid>https://miun173.github.io/blog/download-youtube-mp3-file-using-youtube-dl/</guid>
       <description>This is the command to download it
-youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt;  if you using zsh or fish wrap the url using quotes &#39;url&#39;
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt; if you using zsh or fish wrap the url using quotes &#39;url&#39;
 Happy downloading</description>
     </item>
     

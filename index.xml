@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miun173</title>
+    <title>miun173</title>
     <link>https://miun173.github.io/</link>
-    <description>Recent content on Miun173</description>
+    <description>Recent content on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 17 May 2020 16:04:03 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 01:37:37 +0700</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       
       <guid>https://miun173.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
       <description>Hari ini gw menemukan artikel menarik yang ditulis oleh Iqbal Hariadi. Salah satu cara belajar yg skut adalah kita berguru pada role model. Yang pastinya, dia adalah sosok yg klop sama kita. Dari yang gw tau, orang-orang ini kalo ngobrol itu enak didenger, gampang dicerna, dan bisa jadi influencer buat banyak orang.
-Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;rdquo;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
+Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;quot;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ OPTA Admin (+Backend)</description>
       
       <guid>https://miun173.github.io/blog/download-youtube-mp3-file-using-youtube-dl/</guid>
       <description>This is the command to download it
-youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt;  if you using zsh or fish wrap the url using quotes &#39;url&#39;
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt; if you using zsh or fish wrap the url using quotes &#39;url&#39;
 Happy downloading</description>
     </item>
     
@@ -137,9 +137,8 @@ A/B Testing Using Firebase Remote Config In this first talk they told us what is
       <pubDate>Thu, 12 Jul 2018 06:51:57 +0700</pubDate>
       
       <guid>https://miun173.github.io/projects/mandala-app-prototype/</guid>
-      <description> Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
-Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation
-  App Screenshot </description>
+      <description>Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
+Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation  App Screenshot </description>
     </item>
     
     <item>

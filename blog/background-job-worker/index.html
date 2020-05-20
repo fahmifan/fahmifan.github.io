@@ -12,7 +12,7 @@
 
     <meta property="twitter:site" content="@miun173">
 
-<meta property="og:site_name" content="Miun173" />
+<meta property="og:site_name" content="miun173" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://miun173.github.io/blog/background-job-worker/" />
@@ -29,7 +29,7 @@
 <title>
 
 
-     Miun173 - Background Job Worker 
+     miun173 - Background Job Worker 
 
 </title>
 <link rel="canonical" href="https://miun173.github.io/blog/background-job-worker/">
@@ -1046,7 +1046,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 <link rel="shortcut icon"
 
-    href="https://miun173.github.io/logo.ico"
+    href="https://miun173.github.io/favicon.ico"
 
 >
 
@@ -1066,7 +1066,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         <a href="https://miun173.github.io/"><img class="logo" src="https://miun173.github.io/logo.png" alt="logo"></a>
         
         <div class="content">
-            <a href="https://miun173.github.io/"><div class="name"><h1>Miun173</h1></div></a>
+            <a href="https://miun173.github.io/"><div class="name"><h1>miun173</h1></div></a>
             <nav>
                 <ul>
                     
@@ -1141,15 +1141,11 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 
     
     <p>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.</p>
-
 <p>Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</p>
-
 <blockquote>
 <p>Ketika user mengupload gambar, resize terlebih dahulu baru simpan ke storage</p>
 </blockquote>
-
 <p>Dari requirement tersebut dapat dibagi menjadi:</p>
-
 <ul>
 <li>jalankan worker yang menunggu &ldquo;tugas&rdquo; masuk</li>
 <li>tunggu user selesai upload</li>
@@ -1158,7 +1154,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <li>worker mengambil tugas dari antrian</li>
 <li>worker meresize gambar, lalu simpan ke dalam storage</li>
 </ul>
-
 <p>Dengan menggunakan worker aplikasi menjadi lebih cepat dalam memberikan balikan ke user &amp; mengurangi long running request yg menyebabkan bloking.</p>
 
 
