@@ -6,17 +6,17 @@
     <description>Recent content in Hugo on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 19 Jul 2018 03:29:18 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jul 2018 20:29:18 +0000</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Move Blog to Hugo</title>
-      <link>https://miun173.github.io/blog/move-blog-to-hugo/</link>
-      <pubDate>Thu, 19 Jul 2018 03:29:18 +0700</pubDate>
+      <link>https://miun173.github.io/blog/move-blog-hugo/</link>
+      <pubDate>Wed, 18 Jul 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/move-blog-to-hugo/</guid>
+      <guid>https://miun173.github.io/blog/move-blog-hugo/</guid>
       <description>So, i just tried Hugo and it was super easy to build static web. The installation is faster and easier compare to jekyll. The build time is also fast. Will try to explore later. The deploy is easy, you only need to write some script there is example from Hugo if you using Unix, and then run the script. If you using Github for User , after the script run then it will push into the master branch and finally updated into your github pages.</description>
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content in App on miun173</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 09 Jul 2019 08:06:42 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 01:06:42 +0000</lastBuildDate>
     
 	<atom:link href="https://miun173.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Background Job Worker</title>
       <link>https://miun173.github.io/blog/background-job-worker/</link>
-      <pubDate>Tue, 09 Jul 2019 08:06:42 +0700</pubDate>
+      <pubDate>Tue, 09 Jul 2019 01:06:42 +0000</pubDate>
       
       <guid>https://miun173.github.io/blog/background-job-worker/</guid>
       <description>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.
@@ -23,10 +23,10 @@ Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke we
     
     <item>
       <title>One sprint, One App</title>
-      <link>https://miun173.github.io/blog/one-sprint-one-app/</link>
-      <pubDate>Mon, 12 Feb 2018 03:29:18 +0700</pubDate>
+      <link>https://miun173.github.io/blog/sprint-app/</link>
+      <pubDate>Sun, 11 Feb 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/one-sprint-one-app/</guid>
+      <guid>https://miun173.github.io/blog/sprint-app/</guid>
       <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
     </item>
     
