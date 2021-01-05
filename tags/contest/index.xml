@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contest on miun173</title>
-    <link>https://miun173.github.io/tags/contest/</link>
-    <description>Recent content in Contest on miun173</description>
+    <title>Contest on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/contest/</link>
+    <description>Recent content in Contest on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 19 Jul 2018 09:40:15 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/tags/contest/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/tags/contest/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Project in Android</title>
-      <link>https://miun173.github.io/blog/project-android/</link>
+      <link>https://fahmifan.github.io/blog/project-android/</link>
       <pubDate>Thu, 19 Jul 2018 09:40:15 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/project-android/</guid>
+      <guid>https://fahmifan.github.io/blog/project-android/</guid>
       <description>I have a project with my friends for MTQMN DAQ. It&amp;rsquo;s an android app with a feature kind of to detect your recitation. It&amp;rsquo;s still WIP and i worked on the android development, while my friends work on Machine Learning and as a project manager. This project is challenging, because i am new to android development and trying to make a good decision about architecture and design is not easy. I need to read more about design pattern, RxJava2, and material design.</description>
     </item>
     

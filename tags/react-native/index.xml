@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React Native on miun173</title>
-    <link>https://miun173.github.io/tags/react-native/</link>
-    <description>Recent content in React Native on miun173</description>
+    <title>React Native on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/react-native/</link>
+    <description>Recent content in React Native on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 27 Feb 2018 20:29:18 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trying mobile app development</title>
-      <link>https://miun173.github.io/blog/mobile-app-development/</link>
+      <link>https://fahmifan.github.io/blog/mobile-app-development/</link>
       <pubDate>Tue, 27 Feb 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/mobile-app-development/</guid>
+      <guid>https://fahmifan.github.io/blog/mobile-app-development/</guid>
       <description>At school we were told to make a mobile app for android. The teacher said we can use Java, because this is for the lecture of OO Programming 2, the OO Programming 1 was about basic Java SE. For this lecture we will develop mobile app alone not in a team. I proposed to my teacher if i can used React Native for developing later and he said yes. So, i run into React Native page and set up for local dev.</description>
     </item>
     

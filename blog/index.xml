@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on miun173</title>
-    <link>https://miun173.github.io/blog/</link>
-    <description>Recent content in Blog on miun173</description>
+    <title>Blog on fahmifan</title>
+    <link>https://fahmifan.github.io/blog/</link>
+    <description>Recent content in Blog on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 17 May 2020 09:04:03 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kerja Bahagia Dengan Ikigai</title>
-      <link>https://miun173.github.io/blog/kerja-bahagia-dengan-ikigai/</link>
+      <link>https://fahmifan.github.io/blog/kerja-bahagia-dengan-ikigai/</link>
       <pubDate>Sun, 17 May 2020 09:04:03 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
+      <guid>https://fahmifan.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
       <description>Hari ini gw menemukan artikel menarik yang ditulis oleh Iqbal Hariadi. Salah satu cara belajar yg skut adalah kita berguru pada role model. Yang pastinya, dia adalah sosok yg klop sama kita. Dari yang gw tau, orang-orang ini kalo ngobrol itu enak didenger, gampang dicerna, dan bisa jadi influencer buat banyak orang.
 Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;quot;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
     </item>
     
     <item>
       <title>Apa Itu Event Bus ?</title>
-      <link>https://miun173.github.io/blog/apa-itu-event-bus/</link>
+      <link>https://fahmifan.github.io/blog/apa-itu-event-bus/</link>
       <pubDate>Sun, 05 Apr 2020 08:43:31 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/apa-itu-event-bus/</guid>
+      <guid>https://fahmifan.github.io/blog/apa-itu-event-bus/</guid>
       <description>Event bus adalah sebuah mekanisme yg bisa dipakai untuk berkomunikasi antar komponen tanpa saling tahu satu sama lain. Kalau bisa saya bilang ini juga bagian pub-sub pattern. Lalu, apa kegunaan dari event bus ini? Kegunaanya adalah untuk decoupled antar komponen sehingga tidak saling bergantung secara langsung. Keuntungan lainnya adalah, kita bisa membuat monolith rasa microservice. Dalam arsitektur microservice, salah satu pattern yg sering dipakai adalah pubsub, dan kita bisa menerapkan pubsub ini dalam arsitektur monolith melalui event bus.</description>
     </item>
     
     <item>
       <title>Background Job Worker</title>
-      <link>https://miun173.github.io/blog/background-job-worker/</link>
+      <link>https://fahmifan.github.io/blog/background-job-worker/</link>
       <pubDate>Tue, 09 Jul 2019 01:06:42 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/background-job-worker/</guid>
+      <guid>https://fahmifan.github.io/blog/background-job-worker/</guid>
       <description>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.
 Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</description>
     </item>
     
     <item>
       <title>Domain Driven Design (1)</title>
-      <link>https://miun173.github.io/blog/domain-driven-design-1/</link>
+      <link>https://fahmifan.github.io/blog/domain-driven-design-1/</link>
       <pubDate>Mon, 24 Jun 2019 01:06:30 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/domain-driven-design-1/</guid>
+      <guid>https://fahmifan.github.io/blog/domain-driven-design-1/</guid>
       <description>Dalam kehidupan, manusia tidak lepas dari pekerjaan. Pekerjaan yang dilakukan pun terkadang berulang dan memiliki pola tersendiri. Ada kalanya bertemu masalah kecepatan dan kapasitas dalam bekerja. Pekerjaan atau proses yang berulang dapat dilakukan otomasi menggunakan software. Selain itu, software dapat digunakan dalam pemecahan masalah.
 Dalam membuat software, harus mengerti dulu apa yang dibutuhkan oleh suatu bisnis atau pekerjaan. Untuk dapat membuat software yang tepat guna, diperlukan kolaborasi antara engineer dan stake holder.</description>
     </item>
     
     <item>
       <title>Bekraf Developer Conference</title>
-      <link>https://miun173.github.io/blog/bekraf-developer-conference/</link>
+      <link>https://fahmifan.github.io/blog/bekraf-developer-conference/</link>
       <pubDate>Tue, 04 Dec 2018 01:46:23 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/bekraf-developer-conference/</guid>
+      <guid>https://fahmifan.github.io/blog/bekraf-developer-conference/</guid>
       <description>Setelah lulus dari program Google Developer Kejar (GDK), saya berkesempatan mengikuti Bekraf Developer Conference atau BDC dari Dicoding.
 BDC kali ini diadakan kembali di Bandung, tepatnya di The Papandayan Hotel. Pada BDC tahun ini, terdapat dua track yaitu dari track dari Dicoding dan track dari Asosiasi Game Indonesia.
 Track yg saya ikuti adalah Dicoding. Ada 4 sesi dalam track ini. Sesi pertama membahas tentang Hegemoni Jurusan IT. Sesi kedua tentang Mencetak Talenta Digital dari Kampus.</description>
@@ -63,10 +63,10 @@ Track yg saya ikuti adalah Dicoding. Ada 4 sesi dalam track ini. Sesi pertama me
     
     <item>
       <title>Download Youtube Mp3 File Using `youtube-dl`</title>
-      <link>https://miun173.github.io/blog/download-youtube-mp3-file-youtube-dl/</link>
+      <link>https://fahmifan.github.io/blog/download-youtube-mp3-file-youtube-dl/</link>
       <pubDate>Sat, 15 Sep 2018 09:45:48 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/download-youtube-mp3-file-youtube-dl/</guid>
+      <guid>https://fahmifan.github.io/blog/download-youtube-mp3-file-youtube-dl/</guid>
       <description>This is the command to download it
 youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt; if you using zsh or fish wrap the url using quotes &#39;url&#39;
 Happy downloading</description>
@@ -74,76 +74,76 @@ Happy downloading</description>
     
     <item>
       <title>Adb Meetup 4</title>
-      <link>https://miun173.github.io/blog/adb-meetup-4/</link>
+      <link>https://fahmifan.github.io/blog/adb-meetup-4/</link>
       <pubDate>Wed, 25 Jul 2018 22:47:03 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/adb-meetup-4/</guid>
+      <guid>https://fahmifan.github.io/blog/adb-meetup-4/</guid>
       <description>So last night i attend my first Android Developer Meetup in Bandung from ADB that held in Dicoding Space. The topics are about &amp;ldquo;A/B Testing Using Firebase Remote Config&amp;rdquo; &amp;amp; &amp;ldquo;Make a Android Starterkit using Yeoman Generator&amp;rdquo;.
 A/B Testing Using Firebase Remote Config In this first talk they told us what is A/B testing, how to do it, and the technical part on do A/B testing using the Firebase Remote Config.</description>
     </item>
     
     <item>
       <title>Tokopedia Devcamp: Online Test</title>
-      <link>https://miun173.github.io/blog/tokopedia-devcamp-online-test/</link>
+      <link>https://fahmifan.github.io/blog/tokopedia-devcamp-online-test/</link>
       <pubDate>Mon, 23 Jul 2018 09:01:57 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/tokopedia-devcamp-online-test/</guid>
+      <guid>https://fahmifan.github.io/blog/tokopedia-devcamp-online-test/</guid>
       <description>So, today i just did my online test for Tokopedia Devcamp 2018. This is my second time do online test, and it not that bad. Before, i was always feeling that i woludn&amp;rsquo;t survive on algorithmic test type. The reason for this is because when i take algorithm class in my first year, i did not that good. Sometimes i get overwhelmed to solve a pyramid stars.
  &amp;ldquo;At least I&amp;rsquo;ve been trying hard&amp;rdquo;</description>
     </item>
     
     <item>
       <title>New Project in Android</title>
-      <link>https://miun173.github.io/blog/project-android/</link>
+      <link>https://fahmifan.github.io/blog/project-android/</link>
       <pubDate>Thu, 19 Jul 2018 09:40:15 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/project-android/</guid>
+      <guid>https://fahmifan.github.io/blog/project-android/</guid>
       <description>I have a project with my friends for MTQMN DAQ. It&amp;rsquo;s an android app with a feature kind of to detect your recitation. It&amp;rsquo;s still WIP and i worked on the android development, while my friends work on Machine Learning and as a project manager. This project is challenging, because i am new to android development and trying to make a good decision about architecture and design is not easy. I need to read more about design pattern, RxJava2, and material design.</description>
     </item>
     
     <item>
       <title>Move Blog to Hugo</title>
-      <link>https://miun173.github.io/blog/move-blog-hugo/</link>
+      <link>https://fahmifan.github.io/blog/move-blog-hugo/</link>
       <pubDate>Wed, 18 Jul 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/move-blog-hugo/</guid>
+      <guid>https://fahmifan.github.io/blog/move-blog-hugo/</guid>
       <description>So, i just tried Hugo and it was super easy to build static web. The installation is faster and easier compare to jekyll. The build time is also fast. Will try to explore later. The deploy is easy, you only need to write some script there is example from Hugo if you using Unix, and then run the script. If you using Github for User , after the script run then it will push into the master branch and finally updated into your github pages.</description>
     </item>
     
     <item>
       <title>Make resume from html-css-js.md</title>
-      <link>https://miun173.github.io/blog/resume-html-css-js-md/</link>
+      <link>https://fahmifan.github.io/blog/resume-html-css-js-md/</link>
       <pubDate>Wed, 11 Jul 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/resume-html-css-js-md/</guid>
+      <guid>https://fahmifan.github.io/blog/resume-html-css-js-md/</guid>
       <description>this is the command that does the job. Well for now it only ouput properly in image format. I am still looking for solution to output in pdf format. This is using Wkhtmltopdf :
 wkhtmltoimage --images --javascript-delay 5000 http://localhost:5500/ testcv2.png  I&amp;rsquo;m using local server for this and code in vscode :D</description>
     </item>
     
     <item>
       <title>Trying mobile app development</title>
-      <link>https://miun173.github.io/blog/mobile-app-development/</link>
+      <link>https://fahmifan.github.io/blog/mobile-app-development/</link>
       <pubDate>Tue, 27 Feb 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/mobile-app-development/</guid>
+      <guid>https://fahmifan.github.io/blog/mobile-app-development/</guid>
       <description>At school we were told to make a mobile app for android. The teacher said we can use Java, because this is for the lecture of OO Programming 2, the OO Programming 1 was about basic Java SE. For this lecture we will develop mobile app alone not in a team. I proposed to my teacher if i can used React Native for developing later and he said yes. So, i run into React Native page and set up for local dev.</description>
     </item>
     
     <item>
       <title>One sprint, One App</title>
-      <link>https://miun173.github.io/blog/sprint-app/</link>
+      <link>https://fahmifan.github.io/blog/sprint-app/</link>
       <pubDate>Sun, 11 Feb 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/sprint-app/</guid>
+      <guid>https://fahmifan.github.io/blog/sprint-app/</guid>
       <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
     </item>
     
     <item>
       <title>Opening Bubur Resto</title>
-      <link>https://miun173.github.io/blog/opening-bubur-resto/</link>
+      <link>https://fahmifan.github.io/blog/opening-bubur-resto/</link>
       <pubDate>Wed, 16 Aug 2017 08:35:17 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/opening-bubur-resto/</guid>
+      <guid>https://fahmifan.github.io/blog/opening-bubur-resto/</guid>
       <description>My family just open a bubur resto. The taste is delicious, really :D. It located in Ahmad Yani Street No.909, Bandung. This is what it looks like: It was openning in my college break, i was helping opening it, even tho i can&amp;rsquo;t serve the bubur for a customer XD, so i just delivered the bubur to customer when it ready.
 It was fun!</description>
     </item>

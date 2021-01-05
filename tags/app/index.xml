@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>App on miun173</title>
-    <link>https://miun173.github.io/tags/app/</link>
-    <description>Recent content in App on miun173</description>
+    <title>App on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/app/</link>
+    <description>Recent content in App on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 09 Jul 2019 01:06:42 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/tags/app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Background Job Worker</title>
-      <link>https://miun173.github.io/blog/background-job-worker/</link>
+      <link>https://fahmifan.github.io/blog/background-job-worker/</link>
       <pubDate>Tue, 09 Jul 2019 01:06:42 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/background-job-worker/</guid>
+      <guid>https://fahmifan.github.io/blog/background-job-worker/</guid>
       <description>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.
 Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</description>
     </item>
     
     <item>
       <title>One sprint, One App</title>
-      <link>https://miun173.github.io/blog/sprint-app/</link>
+      <link>https://fahmifan.github.io/blog/sprint-app/</link>
       <pubDate>Sun, 11 Feb 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/sprint-app/</guid>
+      <guid>https://fahmifan.github.io/blog/sprint-app/</guid>
       <description>For the last week I do sprint for making a food app. When i go to college, sometimes i have to stay overnight in my friends house. Doing homework make us hungry and when we want to order food we don&amp;rsquo;t have the menus and it was annoying so i want to make a webapp to display a menus of small restaurants there. It build using ReactJs, tachyons, &amp;amp; styled-components for frontend &amp;amp; lumen for backend api.</description>
     </item>
     

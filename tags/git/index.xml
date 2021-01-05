@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on miun173</title>
-    <link>https://miun173.github.io/tags/git/</link>
-    <description>Recent content in Git on miun173</description>
+    <title>Git on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/git/</link>
+    <description>Recent content in Git on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 18 Jul 2018 20:29:18 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Move Blog to Hugo</title>
-      <link>https://miun173.github.io/blog/move-blog-hugo/</link>
+      <link>https://fahmifan.github.io/blog/move-blog-hugo/</link>
       <pubDate>Wed, 18 Jul 2018 20:29:18 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/move-blog-hugo/</guid>
+      <guid>https://fahmifan.github.io/blog/move-blog-hugo/</guid>
       <description>So, i just tried Hugo and it was super easy to build static web. The installation is faster and easier compare to jekyll. The build time is also fast. Will try to explore later. The deploy is easy, you only need to write some script there is example from Hugo if you using Unix, and then run the script. If you using Github for User , after the script run then it will push into the master branch and finally updated into your github pages.</description>
     </item>
     

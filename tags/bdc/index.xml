@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BDC on miun173</title>
-    <link>https://miun173.github.io/tags/bdc/</link>
-    <description>Recent content in BDC on miun173</description>
+    <title>BDC on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/bdc/</link>
+    <description>Recent content in BDC on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 04 Dec 2018 01:46:23 +0000</lastBuildDate>
     
-	<atom:link href="https://miun173.github.io/tags/bdc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fahmifan.github.io/tags/bdc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bekraf Developer Conference</title>
-      <link>https://miun173.github.io/blog/bekraf-developer-conference/</link>
+      <link>https://fahmifan.github.io/blog/bekraf-developer-conference/</link>
       <pubDate>Tue, 04 Dec 2018 01:46:23 +0000</pubDate>
       
-      <guid>https://miun173.github.io/blog/bekraf-developer-conference/</guid>
+      <guid>https://fahmifan.github.io/blog/bekraf-developer-conference/</guid>
       <description>Setelah lulus dari program Google Developer Kejar (GDK), saya berkesempatan mengikuti Bekraf Developer Conference atau BDC dari Dicoding.
 BDC kali ini diadakan kembali di Bandung, tepatnya di The Papandayan Hotel. Pada BDC tahun ini, terdapat dua track yaitu dari track dari Dicoding dan track dari Asosiasi Game Indonesia.
 Track yg saya ikuti adalah Dicoding. Ada 4 sesi dalam track ini. Sesi pertama membahas tentang Hegemoni Jurusan IT. Sesi kedua tentang Mencetak Talenta Digital dari Kampus.</description>
