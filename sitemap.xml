@@ -1,10 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://fahmifan.github.io/blog/</loc>
-    <lastmod>2020-05-17T09:04:03+00:00</lastmod>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/blog/information-overflow/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/tags/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/tags/fomo/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/tags/information/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/tags/self-improvement/</loc>
+    <lastmod>2021-03-21T18:13:57+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -15,16 +51,13 @@
   <url>
     <loc>https://fahmifan.github.io/tags/pendidikan/</loc>
     <lastmod>2020-05-17T09:04:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/personal-development/</loc>
     <lastmod>2020-05-17T09:04:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fahmifan.github.io/tags/</loc>
-    <lastmod>2020-05-17T09:04:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -35,21 +68,25 @@
   <url>
     <loc>https://fahmifan.github.io/tags/event-bus/</loc>
     <lastmod>2020-04-05T08:43:31+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/programming/</loc>
     <lastmod>2020-04-05T08:43:31+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/tutorial/</loc>
     <lastmod>2020-04-05T08:43:31+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/app/</loc>
     <lastmod>2019-07-09T01:06:42+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -60,11 +97,13 @@
   <url>
     <loc>https://fahmifan.github.io/tags/worker/</loc>
     <lastmod>2019-07-09T01:06:42+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/ddd/</loc>
     <lastmod>2019-06-24T01:06:30+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -75,6 +114,7 @@
   <url>
     <loc>https://fahmifan.github.io/tags/konsep/</loc>
     <lastmod>2019-06-24T01:06:30+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -85,11 +125,13 @@
   <url>
     <loc>https://fahmifan.github.io/projects/</loc>
     <lastmod>2018-12-29T03:01:01+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/bdc/</loc>
     <lastmod>2018-12-04T01:46:23+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -100,11 +142,13 @@
   <url>
     <loc>https://fahmifan.github.io/tags/conference/</loc>
     <lastmod>2018-12-04T01:46:23+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/seminar/</loc>
     <lastmod>2018-12-04T01:46:23+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -120,26 +164,31 @@
   <url>
     <loc>https://fahmifan.github.io/tags/downloader/</loc>
     <lastmod>2018-09-15T09:45:48+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/youtube/</loc>
     <lastmod>2018-09-15T09:45:48+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/youtube-dl/</loc>
     <lastmod>2018-09-15T09:45:48+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/ab-testing/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/adb/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -150,41 +199,49 @@
   <url>
     <loc>https://fahmifan.github.io/tags/android/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/bandung/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/meetup/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/yeoman/</loc>
     <lastmod>2018-07-25T22:47:03+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/bootcamp/</loc>
     <lastmod>2018-07-23T09:01:57+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/devcamp/</loc>
     <lastmod>2018-07-23T09:01:57+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/test/</loc>
     <lastmod>2018-07-23T09:01:57+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/tokopedia/</loc>
     <lastmod>2018-07-23T09:01:57+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -195,6 +252,7 @@
   <url>
     <loc>https://fahmifan.github.io/tags/contest/</loc>
     <lastmod>2018-07-19T09:40:15+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -205,21 +263,25 @@
   <url>
     <loc>https://fahmifan.github.io/tags/project/</loc>
     <lastmod>2018-07-19T09:40:15+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/blog/</loc>
     <lastmod>2018-07-18T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/git/</loc>
     <lastmod>2018-07-18T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/hugo/</loc>
     <lastmod>2018-07-18T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -230,11 +292,13 @@
   <url>
     <loc>https://fahmifan.github.io/tags/starting/</loc>
     <lastmod>2018-07-18T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/submodule/</loc>
     <lastmod>2018-07-18T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -245,16 +309,19 @@
   <url>
     <loc>https://fahmifan.github.io/tags/css/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/html/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/js/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -265,36 +332,43 @@
   <url>
     <loc>https://fahmifan.github.io/tags/resume/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/tips/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/tool/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/wkhtmltopdf/</loc>
     <lastmod>2018-07-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/flutter/</loc>
     <lastmod>2018-02-27T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/ideas/</loc>
     <lastmod>2018-02-27T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fahmifan.github.io/tags/react-native/</loc>
     <lastmod>2018-02-27T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -305,6 +379,7 @@
   <url>
     <loc>https://fahmifan.github.io/tags/developement/</loc>
     <lastmod>2018-02-11T20:29:18+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -314,11 +389,6 @@
   
   <url>
     <loc>https://fahmifan.github.io/about/</loc>
-    <lastmod>2018-02-01T01:37:37+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fahmifan.github.io/</loc>
     <lastmod>2018-02-01T01:37:37+07:00</lastmod>
   </url>
   

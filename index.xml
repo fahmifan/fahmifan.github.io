@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fahmifan</title>
@@ -6,10 +6,20 @@
     <description>Recent content on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 01 Feb 2018 01:37:37 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 21 Mar 2021 18:13:57 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Information Overflow</title>
+      <link>https://fahmifan.github.io/blog/information-overflow/</link>
+      <pubDate>Sun, 21 Mar 2021 18:13:57 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/information-overflow/</guid>
+      <description>Like eating, consuming informations should have a portion. We have limited appetiet, too much eating results into sick stomach, stress. Fear of Missing Out or FOMO, is a kind of anxity that comes from &amp;ldquo;too much information&amp;rdquo;.
+Internet might be the source of this. Why ? Open internet, bring massive, free, and accessible information into socity. Social media, a decendant of internet known as &amp;ldquo;rich&amp;rdquo; in information, such as Twitter, Instagram, Tiktok, Youtube.</description>
+    </item>
     
     <item>
       <title>Kerja Bahagia Dengan Ikigai</title>
@@ -18,7 +28,7 @@
       
       <guid>https://fahmifan.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
       <description>Hari ini gw menemukan artikel menarik yang ditulis oleh Iqbal Hariadi. Salah satu cara belajar yg skut adalah kita berguru pada role model. Yang pastinya, dia adalah sosok yg klop sama kita. Dari yang gw tau, orang-orang ini kalo ngobrol itu enak didenger, gampang dicerna, dan bisa jadi influencer buat banyak orang.
-Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;quot;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
+Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;rdquo;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
     </item>
     
     <item>
@@ -89,7 +99,7 @@ OPTA Admin (+Backend)</description>
       
       <guid>https://fahmifan.github.io/blog/download-youtube-mp3-file-youtube-dl/</guid>
       <description>This is the command to download it
-youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt; if you using zsh or fish wrap the url using quotes &#39;url&#39;
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt;  if you using zsh or fish wrap the url using quotes &#39;url&#39;
 Happy downloading</description>
     </item>
     
@@ -137,8 +147,9 @@ A/B Testing Using Firebase Remote Config In this first talk they told us what is
       <pubDate>Wed, 11 Jul 2018 23:51:57 +0000</pubDate>
       
       <guid>https://fahmifan.github.io/projects/mandala-app-prototype/</guid>
-      <description>Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
-Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation  App Screenshot </description>
+      <description> Manuskrip Dalam Aplikasi This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp;amp; MySQL for the backend.
+Features:  Script visualization Search script translation Download new script from server Sundanese old script dictionary Call the Ciburuy representation
+  App Screenshot </description>
     </item>
     
     <item>
