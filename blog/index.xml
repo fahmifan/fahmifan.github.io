@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on fahmifan</title>
@@ -6,19 +6,31 @@
     <description>Recent content in Blog on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 21 Mar 2021 18:13:57 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 08 May 2021 21:03:22 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Information Overflow</title>
-      <link>https://fahmifan.github.io/blog/information-overflow/</link>
-      <pubDate>Sun, 21 Mar 2021 18:13:57 +0700</pubDate>
+      <title>Setup Caddy Web Server</title>
+      <link>https://fahmifan.github.io/blog/setup-caddy-web-server/</link>
+      <pubDate>Sat, 08 May 2021 21:03:22 +0700</pubDate>
       
-      <guid>https://fahmifan.github.io/blog/information-overflow/</guid>
-      <description>Like eating, consuming informations should have a portion. We have limited appetiet, too much eating results into sick stomach, stress. Fear of Missing Out or FOMO, is a kind of anxity that comes from &amp;ldquo;too much information&amp;rdquo;.
-Internet might be the source of this. Why ? Open internet, bring massive, free, and accessible information into socity. Social media, a decendant of internet known as &amp;ldquo;rich&amp;rdquo; in information, such as Twitter, Instagram, Tiktok, Youtube.</description>
+      <guid>https://fahmifan.github.io/blog/setup-caddy-web-server/</guid>
+      <description>Goal:
+ setup caddy web server as user systemd service  Steps:
+ create working directory (workid) mkdir -p ~/admin/caddy  download caddy v2 into workdir Allow non root to listen on port 80 &amp;amp; 443 sudo setcap cap_net_bind_service=+ep ./caddy  create a Caddyfile in ~/admin/caddy. A simple reverse proxy example example.com { reverse_proxy localhost:8000 }  add this systemd unit file into ~/.config/systemd/user/caddy.service [Unit] Description=Caddy Web Server After=network.target [Service] Type=simple Restart=on-failure RestartSec=10 ExecStart=/home/deployr/admin/caddy/caddy run WorkingDirectory=/home/deployr/admin/caddy LimitNOFILE=4096 PIDFile=/var/run/caddy/caddy.</description>
+    </item>
+    
+    <item>
+      <title>Initial Ubuntu Vps Setup</title>
+      <link>https://fahmifan.github.io/blog/initial-ubuntu-vps-setup/</link>
+      <pubDate>Sat, 08 May 2021 06:52:16 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/initial-ubuntu-vps-setup/</guid>
+      <description>Goal:
+ setup user untuk deployr referensi: Initial Server Setup with Ubuntu 20.04  Setup User Steps:
+ buat instance di vps provider  kalau pakai linode tambahkan ssh laptop biar ga perlu input password pas ssh as root   ssh as root ssh root@IP create new deployr with sudo access  adduser deployr input password untuk user info, bisa pakai default, tekan enter aja   grant admin privileges  usermod -aG admin deployr   setup basic firewall  ufw app list, harusnya cuma ada OpenSSH ufw enable, aktifkan ufw cek status sudah nyala atau belum ufw status   tambah ssh untuk user deployr  kalau laptop nya sama saat buat instance, bisa pakai ssh user root, tinggal pakai rsync masih login sebagi root di vps rsync --archive --chown=deployr:deployr ~/.</description>
     </item>
     
     <item>
@@ -28,7 +40,7 @@ Internet might be the source of this. Why ? Open internet, bring massive, free, 
       
       <guid>https://fahmifan.github.io/blog/kerja-bahagia-dengan-ikigai/</guid>
       <description>Hari ini gw menemukan artikel menarik yang ditulis oleh Iqbal Hariadi. Salah satu cara belajar yg skut adalah kita berguru pada role model. Yang pastinya, dia adalah sosok yg klop sama kita. Dari yang gw tau, orang-orang ini kalo ngobrol itu enak didenger, gampang dicerna, dan bisa jadi influencer buat banyak orang.
-Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;rdquo;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
+Di artikel ini, sosok yg di-highlight adalah Chris Do. Dan video dia ttg &amp;ldquo;How To Find And Do Work That You Love (Ikigai)&amp;quot;, ngebuka satu pintu perspektif lagi tentang kerja dan kebahagiaan.</description>
     </item>
     
     <item>
@@ -78,7 +90,7 @@ Track yg saya ikuti adalah Dicoding. Ada 4 sesi dalam track ini. Sesi pertama me
       
       <guid>https://fahmifan.github.io/blog/download-youtube-mp3-file-youtube-dl/</guid>
       <description>This is the command to download it
-youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt;  if you using zsh or fish wrap the url using quotes &#39;url&#39;
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 &amp;lt;url&amp;gt; if you using zsh or fish wrap the url using quotes &#39;url&#39;
 Happy downloading</description>
     </item>
     

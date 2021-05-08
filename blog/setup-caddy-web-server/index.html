@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/projects/mandala-app-prototype/" />
-<meta property="og:title" content="Mandala App Prototype" />
-<meta property="twitter:title" content="Mandala App Prototype">
+<meta property="og:url" content="https://fahmifan.github.io/blog/setup-caddy-web-server/" />
+<meta property="og:title" content="Setup Caddy Web Server" />
+<meta property="twitter:title" content="Setup Caddy Web Server">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Mandala App Prototype 
+     fahmifan - Setup Caddy Web Server 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/projects/mandala-app-prototype/">
+<link rel="canonical" href="https://fahmifan.github.io/blog/setup-caddy-web-server/">
 
 
 <style media="screen">
@@ -1091,33 +1091,142 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-<div class="main column">
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="page-heading">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
 
-    Mandala App Prototype
+    Setup Caddy Web Server
 
 </div>
 
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sat May 8 2021 21:03:22 WIB">May 8, 2021</div>
+                    
+                        
+                    
+                    <div class="reading-time middot">1 minute read</div>
+                    <div class="tags">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="markdown">
                 
     
-    <h2 id="manuskrip-dalam-aplikasi">Manuskrip Dalam Aplikasi</h2>
-<p>This app is about old sundanese manuscript from Ciburuy. It was built using Android Studio for the client side, Codeigniter 3 &amp; MySQL for the backend.</p>
-<h3 id="features">Features:</h3>
+    <p>Goal:</p>
 <ul>
-<li>Script visualization</li>
-<li>Search script translation</li>
-<li>Download new script from server</li>
-<li>Sundanese old script dictionary</li>
-<li>Call the Ciburuy representation</li>
+<li>setup caddy web server as user systemd service</li>
 </ul>
-<h3 id="app-screenshot">App Screenshot</h3>
-<p><img src="https://fahmifan.github.io/photos/mandala-prototype/mp-all.png" alt="all"></p>
+<p>Steps:</p>
+<ul>
+<li>create working directory (workid)
+<pre><code>mkdir -p ~/admin/caddy
+</code></pre></li>
+<li>download caddy v2 into workdir</li>
+<li>Allow non root to listen on port 80 &amp; 443
+<pre><code>sudo setcap cap_net_bind_service=+ep ./caddy
+</code></pre></li>
+<li>create a <code>Caddyfile</code> in <code>~/admin/caddy</code>. A simple reverse proxy example
+<pre><code class="language-Caddyfile" data-lang="Caddyfile">example.com {
+    reverse_proxy localhost:8000
+}
+</code></pre></li>
+<li>add this systemd unit file into <code>~/.config/systemd/user/caddy.service</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-s" data-lang="s">[Unit]
+Description<span style="color:#f92672">=</span>Caddy Web Server
+After<span style="color:#f92672">=</span>network.target
+
+[Service]
+Type<span style="color:#f92672">=</span>simple
+Restart<span style="color:#f92672">=</span>on<span style="color:#f92672">-</span>failure
+RestartSec<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+ExecStart<span style="color:#f92672">=/</span>home<span style="color:#f92672">/</span>deployr<span style="color:#f92672">/</span>admin<span style="color:#f92672">/</span>caddy<span style="color:#f92672">/</span>caddy run
+WorkingDirectory<span style="color:#f92672">=/</span>home<span style="color:#f92672">/</span>deployr<span style="color:#f92672">/</span>admin<span style="color:#f92672">/</span>caddy
+LimitNOFILE<span style="color:#f92672">=</span><span style="color:#ae81ff">4096</span>
+PIDFile<span style="color:#f92672">=/</span>var<span style="color:#f92672">/</span>run<span style="color:#f92672">/</span>caddy<span style="color:#f92672">/</span>caddy.pid
+
+[Install]
+WantedBy<span style="color:#f92672">=</span>default.target
+</code></pre></div></li>
+<li>make sure your user already <code>enable linger</code> to start the service as user on boot. Login as <code>root</code> then run
+<pre><code>loginctl enable-linger deployr
+</code></pre></li>
+<li>reload systemd
+<pre><code>systemctl --user daemon-reload
+</code></pre></li>
+<li>enable caddy on boot
+<pre><code>systemctl --user enable caddy.service
+</code></pre></li>
+<li>start it
+<pre><code>systemctl --user start caddy.service
+</code></pre></li>
+<li>check if it running well
+<pre><code>systemctl --user status caddy.service
+</code></pre></li>
+<li>to check the log use <code>journalctl</code>
+<pre><code>journalctl -f --user-unit=caddy
+</code></pre></li>
+</ul>
 
 
+                <br>
             </div>
+            
+            
+                <div class="navigation">
+                    
+                    <div>
+                        <img class="icon" src="https://fahmifan.github.io/img/back.svg" alt="back" />
+                        <a href="https://fahmifan.github.io/blog/initial-ubuntu-vps-setup/">Initial Ubuntu Vps Setup</a>
+                    </div>
+                    
+                    <div style="width: 100%;"></div>
+                    
+                </div>
+            
+            <br>
+            
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-fahmifan-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+
+            
+
+            
         </div>
     </div>
 </div>

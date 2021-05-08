@@ -1136,15 +1136,11 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 
     
     <p>Dalam pengembangan web, request yang memerlukan process yang lama (long running) dapat memblokir request lain. Kalo seperti ini, maka web kita tidak responsive dan cepat. Process lama ini dapat kita alihkan ke process lain yang berjalan di samping process utama yang disebut worker.</p>
-
 <p>Salah satu pattern umum untuk menggunakan worker adalah ketika ada request ke web servis, maka akan di-reply langsung, lalu akan dijadawlkan task dari request tersebut ke worker. Misalkan kita mendapat requirement sbb:</p>
-
 <blockquote>
 <p>Ketika user mengupload gambar, resize terlebih dahulu baru simpan ke storage</p>
 </blockquote>
-
 <p>Dari requirement tersebut dapat dibagi menjadi:</p>
-
 <ul>
 <li>jalankan worker yang menunggu &ldquo;tugas&rdquo; masuk</li>
 <li>tunggu user selesai upload</li>
@@ -1153,7 +1149,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <li>worker mengambil tugas dari antrian</li>
 <li>worker meresize gambar, lalu simpan ke dalam storage</li>
 </ul>
-
 <p>Dengan menggunakan worker aplikasi menjadi lebih cepat dalam memberikan balikan ke user &amp; mengurangi long running request yg menyebabkan bloking.</p>
 
 
