@@ -19,7 +19,7 @@
       <guid>https://fahmifan.github.io/blog/setup-caddy-web-server/</guid>
       <description>Goal:
  setup caddy web server as user systemd service  Steps:
- create working directory (workid) mkdir -p ~/admin/caddy  download caddy v2 into workdir Allow non root to listen on port 80 &amp;amp; 443 sudo setcap cap_net_bind_service=+ep ./caddy  create a Caddyfile in ~/admin/caddy. A simple reverse proxy example example.com { reverse_proxy localhost:8000 }  add this systemd unit file into ~/.config/systemd/user/caddy.service [Unit] Description=Caddy Web Server After=network.target [Service] Type=simple Restart=on-failure RestartSec=10 ExecStart=/home/deployr/admin/caddy/caddy run WorkingDirectory=/home/deployr/admin/caddy LimitNOFILE=4096 PIDFile=/var/run/caddy/caddy.</description>
+ create working directory (workdir) mkdir -p ~/admin/caddy  download caddy v2 into workdir Allow non root to listen on port 80 &amp;amp; 443 sudo setcap cap_net_bind_service=+ep ./caddy  create a Caddyfile in ~/admin/caddy. A simple reverse proxy example example.com { reverse_proxy localhost:8000 }  add this systemd unit file into ~/.config/systemd/user/caddy.service [Unit] Description=Caddy Web Server After=network.target [Service] Type=simple Restart=on-failure RestartSec=10 ExecStart=/home/deployr/admin/caddy/caddy run WorkingDirectory=/home/deployr/admin/caddy LimitNOFILE=4096 PIDFile=/var/run/caddy/caddy.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       
       <guid>https://fahmifan.github.io/blog/initial-ubuntu-vps-setup/</guid>
       <description>Goal:
- setup user untuk deployr referensi: Initial Server Setup with Ubuntu 20.04  Setup User Steps:
+ setup user untuk deployr referensi: Initial Server Setup with Ubuntu 20.04  Steps:
  buat instance di vps provider  kalau pakai linode tambahkan ssh laptop biar ga perlu input password pas ssh as root   ssh as root ssh root@IP create new deployr with sudo access  adduser deployr input password untuk user info, bisa pakai default, tekan enter aja   grant admin privileges  usermod -aG admin deployr   setup basic firewall  ufw app list, harusnya cuma ada OpenSSH ufw enable, aktifkan ufw cek status sudah nyala atau belum ufw status   tambah ssh untuk user deployr  kalau laptop nya sama saat buat instance, bisa pakai ssh user root, tinggal pakai rsync masih login sebagi root di vps rsync --archive --chown=deployr:deployr ~/.</description>
     </item>
     
