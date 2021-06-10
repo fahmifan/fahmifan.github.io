@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/blog/setup-caddy-web-server/" />
-<meta property="og:title" content="Setup Caddy Web Server" />
-<meta property="twitter:title" content="Setup Caddy Web Server">
+<meta property="og:url" content="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/" />
+<meta property="og:title" content="Setup Bluetooth Adapter on Linux" />
+<meta property="twitter:title" content="Setup Bluetooth Adapter on Linux">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Setup Caddy Web Server 
+     fahmifan - Setup Bluetooth Adapter on Linux 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/blog/setup-caddy-web-server/">
+<link rel="canonical" href="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/">
 
 
 <style media="screen">
@@ -1100,17 +1100,17 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 <div class="title-container">
                     <div class="page-heading">
 
-    Setup Caddy Web Server
+    Setup Bluetooth Adapter on Linux
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Sat May 8 2021 21:03:22 WIB">May 8, 2021</div>
+                    <div class="date" title="Wed Jun 9 2021 06:52:16 WIB">Jun 9, 2021</div>
                     
                         
                     
-                    <div class="reading-time middot">1 minute read</div>
+                    <div class="reading-time middot">2 minute read</div>
                     <div class="tags">
                         <ul>
                           
@@ -1127,60 +1127,34 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    <p>Goal:</p>
-<ul>
-<li>setup caddy web server as user systemd service</li>
-</ul>
-<p>Steps:</p>
-<ul>
-<li>create working directory (workdir)
-<pre><code>mkdir -p ~/admin/caddy
-</code></pre></li>
-<li>download caddy v2 into workdir</li>
-<li>Allow non root to listen on port 80 &amp; 443
-<pre><code>sudo setcap cap_net_bind_service=+ep ./caddy
-</code></pre></li>
-<li>create a <code>Caddyfile</code> in <code>~/admin/caddy</code>. A simple reverse proxy example
-<pre><code class="language-Caddyfile" data-lang="Caddyfile">example.com {
-    reverse_proxy localhost:8000
-}
-</code></pre></li>
-<li>add this systemd unit file into <code>~/.config/systemd/user/caddy.service</code>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-s" data-lang="s">[Unit]
-Description<span style="color:#f92672">=</span>Caddy Web Server
-After<span style="color:#f92672">=</span>network.target
+    <p>I have a desktop with Linux installed on it and i would like to add bluetooth adapter for it. This is my Linux version</p>
+<pre><code>➜ uname -v -r   
+5.8.0-55-generic #62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021
+</code></pre><p>So i decided to bought
+this &ldquo;ORICO BTA508 USB Bluetooth 5.0 Dongle BTA 508 BTA-508 Adapter - Hitam&rdquo; from <a href="https://www.tokopedia.com/clickandgo/orico-bta508-usb-bluetooth-5-0-dongle-bta-508-bta-508-adapter-hitam">Tokopedia</a>. But, the only official driver/firmware is for Windows.</p>
+<p>Then, how about Linux ? To solve this question, we need to know which chip the bluetooth uses and install a custom firmware/driver.</p>
+<p>Use this command to check what chips the bluetooth adapter use</p>
+<pre><code>dmesg | grep -i Bluetooth
+</code></pre><p>The output should looks like this</p>
+<pre><code>[    1.810236] usb 1-4.2: Product: Bluetooth Radio
+...
+[    3.546498] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_fw.bin
+[    3.551034] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_config.bin
+...
+</code></pre><p>This line <code>hci0: RTL: loading rtl_bt/rtl8761b_fw.bin</code> shows us, that the chip is <code>rtl8761b</code> and it need <code>rtl8761b_fw</code> firmware/driver.
+So i google <code>rtl8761b_fw</code> and found an article from <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=294634">raspberry forum</a> with the same question.</p>
+<p>But, to be sure i look up to it once again and found this arch linux <a href="https://aur.archlinux.org/packages/rtl8761b-fw/">post</a>. After i read from arch linux post, i decided to follow it. So, i download the driver from the <a href="https://mpow.s3-us-west-1.amazonaws.com/mpow_BH519A_driver+for+Linux.7z">source</a> mention in the article and follow the steps from the raspberry forum article as follows:</p>
+<ol>
+<li>Extract the driver</li>
+<li>Copy the drivers</li>
+</ol>
+<pre><code>sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_fw /lib/firmware/rtl_bt/rtl8761b_fw.bin
 
-[Service]
-Type<span style="color:#f92672">=</span>simple
-Restart<span style="color:#f92672">=</span>on<span style="color:#f92672">-</span>failure
-RestartSec<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
-ExecStart<span style="color:#f92672">=/</span>home<span style="color:#f92672">/</span>deployr<span style="color:#f92672">/</span>admin<span style="color:#f92672">/</span>caddy<span style="color:#f92672">/</span>caddy run
-WorkingDirectory<span style="color:#f92672">=/</span>home<span style="color:#f92672">/</span>deployr<span style="color:#f92672">/</span>admin<span style="color:#f92672">/</span>caddy
-LimitNOFILE<span style="color:#f92672">=</span><span style="color:#ae81ff">4096</span>
-PIDFile<span style="color:#f92672">=/</span>var<span style="color:#f92672">/</span>run<span style="color:#f92672">/</span>caddy<span style="color:#f92672">/</span>caddy.pid
-
-[Install]
-WantedBy<span style="color:#f92672">=</span>default.target
-</code></pre></div></li>
-<li>make sure your user already <code>enable linger</code> to start the service as user on boot. Login as <code>root</code> then run
-<pre><code>loginctl enable-linger deployr
-</code></pre></li>
-<li>reload systemd
-<pre><code>systemctl --user daemon-reload
-</code></pre></li>
-<li>enable caddy on boot
-<pre><code>systemctl --user enable caddy.service
-</code></pre></li>
-<li>start it
-<pre><code>systemctl --user start caddy.service
-</code></pre></li>
-<li>check if it running well
-<pre><code>systemctl --user status caddy.service
-</code></pre></li>
-<li>to check the log use <code>journalctl</code>
-<pre><code>journalctl -f --user-unit=caddy
-</code></pre></li>
-</ul>
+sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_config /lib/firmware/rtl_bt/rtl8761b_config.bin
+</code></pre><ol start="3">
+<li>Reboot</li>
+</ol>
+<p>Thats it, when i check on bluetooth manager, it works</p>
 
 
                 <br>
@@ -1191,15 +1165,10 @@ WantedBy<span style="color:#f92672">=</span>default.target
                     
                     <div>
                         <img class="icon" src="https://fahmifan.github.io/img/back.svg" alt="back" />
-                        <a href="https://fahmifan.github.io/blog/initial-ubuntu-vps-setup/">Initial Ubuntu Vps Setup</a>
+                        <a href="https://fahmifan.github.io/blog/setup-caddy-web-server/">Setup Caddy Web Server</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
-                    
-                    <div>
-                        <a href="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/">Setup Bluetooth Adapter on Linux</a>
-                        <img class="icon" src="https://fahmifan.github.io/img/next.svg" alt="next" />
-                    </div>
                     
                 </div>
             
