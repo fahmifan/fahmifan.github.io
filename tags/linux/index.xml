@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on fahmifan</title>
+    <link>https://fahmifan.github.io/tags/linux/</link>
+    <description>Recent content in linux on fahmifan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 09 Jun 2021 06:52:16 +0700</lastBuildDate>
+    
+	<atom:link href="https://fahmifan.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup Bluetooth Adapter on Linux</title>
+      <link>https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/</link>
+      <pubDate>Wed, 09 Jun 2021 06:52:16 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/</guid>
+      <description>I have a desktop with Linux installed on it and i would like to add bluetooth adapter for it. This is my Linux version
+➜ uname -v -r 5.8.0-55-generic #62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021 So i decided to bought this &amp;ldquo;ORICO BTA508 USB Bluetooth 5.0 Dongle BTA 508 BTA-508 Adapter - Hitam&amp;rdquo; from Tokopedia. But, the only official driver/firmware is for Windows.
+Then, how about Linux ? To solve this question, we need to know which chip the bluetooth uses and install a custom firmware/driver.</description>
+    </item>
+    
+  </channel>
+</rss>
