@@ -6,10 +6,20 @@
     <description>Recent content in Blog on fahmifan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 13 Jun 2021 10:24:35 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 05:52:08 +0700</lastBuildDate>
     
 	<atom:link href="https://fahmifan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Veikk Driver Linux</title>
+      <link>https://fahmifan.github.io/blog/install-veikk-driver-linux/</link>
+      <pubDate>Mon, 14 Jun 2021 05:52:08 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/install-veikk-driver-linux/</guid>
+      <description>I decided to buy a Veikk pen tablet S640, but it&amp;rsquo;s drivers only for Mac and Windows. And fortunately, there are driver and GUI tools for the S640 from jlam55555.
+Following the installation guides, voila! enjoy your pen tablet on Linux.</description>
+    </item>
     
     <item>
       <title>What is LRU Cache And How It Works ?</title>
