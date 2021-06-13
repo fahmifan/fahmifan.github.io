@@ -1136,10 +1136,8 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 
     
     <h1 id="what-is-lru-cache">What is LRU cache</h1>
-<p>A cache is a way to store a data that accessed frequetnly and need to be fast.
-We can use cache to store a result from a computation or result of SQL query. Cache usually stored in memory with key-value style to make sure it fast to store item and accessed.</p>
-<p>One of the cache algorithm is LRU or <em>Least Recently Used</em>.
-LRU will limit the memory usage by gives maximum items that can be stored. When there is new item to be store and it already reachs the limit, it discards the least used item.</p>
+<p>A cache is a way to store data that accessed frequently and needs to be fast. We can use cache to store a result from computation or result of SQL query. A cache is usually stored in memory with a key-value style to make sure it fast to store item and access.</p>
+<p>One of the cache algorithms is LRU or <em>Least Recently Used</em>. LRU will limit the memory usage by gives maximum items that can be stored. When there is a new item to be store and it already reached the limit, it discards the least used item.</p>
 <h1 id="how-to-make-lru-cache-in-go">How to make LRU Cache in GO</h1>
 <blockquote>
 <p>TLDR</p>
@@ -1149,7 +1147,7 @@ LRU will limit the memory usage by gives maximum items that can be stored. When 
 <li><a href="https://github.com/fahmifan/lrucache">lrucache (concurrent)</a></li>
 </ul>
 </blockquote>
-<p>There is two main component in LRU cache, those are <code>Queue</code> and <code>Hash Map</code>. The <code>Queue</code> is used to store the items that implemented in linked list, while the <code>Hash Map</code> is used to make the complexity <code>O(1)</code> when accessed.</p>
+<p>There are two main components in LRU cache, those are <code>Queue</code> and <code>Hash Map</code>. The <code>Queue</code> is used to store the items that implemented in a linked list, while the <code>Hash Map</code> is used to make the complexity <code>O(1)</code> when accessed.</p>
 <p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/queue-and-hash.png" src="https://fahmifan.github.io/photos/lru-cache/low/queue-and-hash.png" alt="Queue & Hash Map"></p></figure>
 <h2 id="creating-queue">Creating Queue</h2>
 <blockquote>
@@ -1173,8 +1171,8 @@ LRU will limit the memory usage by gives maximum items that can be stored. When 
     <span style="color:#75715e">// Value is used to store an item
 </span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Value</span> <span style="color:#66d9ef">interface</span>{}
 }
-</code></pre></div><p>We will create three methods for the queue <code>InsertFirst</code>, <code>RemoveLast</code> and <code>RemoveNode</code>.</p>
-<p>The structure of the Node. It has three parts, <code>prev</code>, <code>value</code>, and <code>next</code>. The <code>prev</code> and <code>next</code> are pointers to an adjecent node. The <code>value</code> is an <code>interface{}</code> that can hold any data types.
+</code></pre></div><p>We will create three methods for the queue <code>InsertFirst</code>, <code>RemoveLast</code>, and <code>RemoveNode</code>.</p>
+<p>The structure of the Node. It has three parts, <code>prev</code>, <code>value</code>, and <code>next</code>. The <code>prev</code> and <code>next</code> are pointers to an adjacent node. The <code>value</code> is an <code>interface{}</code> that can hold any data type.
 <figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/node.png" src="https://fahmifan.github.io/photos/lru-cache/low/node.png" alt="a node"></p></figure>
 <p>These are algorithm and code for <code>InsertFirst</code>
 <figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/insert-first-algo.png" src="https://fahmifan.github.io/photos/lru-cache/low/insert-first-algo.png" alt="insert first algorithm"></p></figure>
@@ -1261,7 +1259,7 @@ LRU will limit the memory usage by gives maximum items that can be stored. When 
 <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">isOne</span>() <span style="color:#66d9ef">bool</span> {
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span>
 }
-</code></pre></div><p>The <code>breakLinks</code> method are implemented as follows</p>
+</code></pre></div><p>The <code>breakLinks</code> method is implemented as follows</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// set next &amp; prev to nil
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>) <span style="color:#a6e22e">breakLinks</span>() {
 	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
@@ -1346,9 +1344,9 @@ LRU will limit the memory usage by gives maximum items that can be stored. When 
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">Value</span>
 }
 </code></pre></div><h1 id="notes-on-implement-synchronization-for-concurrency">Notes on Implement Synchronization for Concurrency</h1>
-<p>The previous codes works for non concurrent usage, because when accessing &amp; writing to the hash map or queue, there are needs for lock and synchronization. Also keep in minds, that adding synchronization will impact the performance.</p>
-<p>We can use <code>mutex</code> for synchronization. In Go, there are two types of mutex, <code>Mutex</code> and <code>RWMutex</code>. The <code>Mutex</code> is general purpose for locking only one goroutine that has access into a resource. The <code>RWMutex</code> has two locking mechanism, First is <code>RLock</code> that can be hold by multiple gorutines and is used for reading. Second is <code>Lock</code> that can only be hold by one goroutine and is used for writng.</p>
-<p>I use two mutex for <code>LRUCacher</code>, <code>hashMutex</code> for access &amp; mutating <code>hash</code> and <code>countMutex</code> when mutate the <code>count</code>. Also, to help detecting race condition, i use <code>-race</code> flag when running go test</p>
+<p>The previous codes work for non-concurrent usage because when accessing &amp; writing to the hash map or queue, there are needs for lock and synchronization. Also keep in mind, that adding synchronization will impact the performance.</p>
+<p>We can use a <code>mutex</code> for synchronization. In Go, there are two types of mutex, a <code>Mutex</code> and  a <code>RWMutex</code>. The <code>Mutex</code> is general purpose for locking only one goroutine that has access to a resource. The <code>RWMutex</code> has two locking mechanisms. The first is a <code>RLock</code> that can behold by multiple gorutines and is used for reading. The Second is a <code>Lock</code> that can only behold by one goroutine and is used for writing.</p>
+<p>I use two mutexes for <code>LRUCacher</code>, <code>hashMutex</code> for access &amp; mutating <code>hash</code>, and <code>countMutex</code> when mutating the <code>count</code>. Also, to help to detects race condition, I use <code>-race</code> flag when running the go test</p>
 <pre><code>go test -race ./...
 </code></pre><p>The rest of the code can be checked in this repo <a href="https://github.com/fahmifan/lrucache">lrucache</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">LRUCacher</span> <span style="color:#66d9ef">struct</span> {
