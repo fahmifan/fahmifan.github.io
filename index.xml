@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>What is LRU Cache And How It Works ?</title>
+      <link>https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/</link>
+      <pubDate>Sun, 13 Jun 2021 10:24:35 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/</guid>
+      <description>What is LRU cache A cache is a way to store a data that accessed frequetnly and need to be fast. We can use cache to store a result from a computation or result of SQL query. Cache usually stored in memory with key-value style to make sure it fast to store item and accessed.
+One of the cache algorithm is LRU or Least Recently Used. LRU will limit the memory usage by gives maximum items that can be stored.</description>
+    </item>
+    
+    <item>
       <title>Setup Bluetooth Adapter on Linux</title>
       <link>https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/</link>
       <pubDate>Wed, 09 Jun 2021 06:52:16 +0700</pubDate>

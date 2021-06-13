@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/" />
-<meta property="og:title" content="Setup Bluetooth Adapter on Linux" />
-<meta property="twitter:title" content="Setup Bluetooth Adapter on Linux">
+<meta property="og:url" content="https://fahmifan.github.io/tags/cache/" />
+<meta property="og:title" content="cache" />
+<meta property="twitter:title" content="cache">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Setup Bluetooth Adapter on Linux 
+     fahmifan - cache 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/">
+<link rel="canonical" href="https://fahmifan.github.io/tags/cache/">
 
 
 <style media="screen">
@@ -1049,6 +1049,8 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
+  <link href="https://fahmifan.github.io/tags/cache/index.xml" rel="alternate" type="application/rss+xml" title="fahmifan" />
+
 
 </head>
 
@@ -1056,7 +1058,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <body>
 
 
-<div class="header column">
+<div class="header header-home column">
 
     <div class="container">
         
@@ -1089,137 +1091,24 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-
-
-
-
-<div class="main post non-narrow zero-top-spacing column">
+<div class="main column">
     <div class="container">
         <div class="content">
-            <div class="front-matter">
-                <div class="title-container">
-                    <div class="page-heading">
-
-    Setup Bluetooth Adapter on Linux
-
-</div>
-
-                </div>
-                <div class="meta">
-                    <div class="date" title="Wed Jun 9 2021 06:52:16 WIB">Jun 9, 2021</div>
+            <div class="posts">
+                <div class="page-heading">Posts about cache</div>
+                <ul>
                     
-                        
+                        <li class="post-item">
+    <span class="meta">Jun 13, 2021</span>
+    <a href="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/"><span>What is LRU Cache And How It Works ?</span></a>
+</li>
+
                     
-                    <div class="reading-time middot">2 minute read</div>
-                    <div class="tags">
-                        <ul>
-                          
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/linux">linux</a> </li>
-                          
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/bluetooth">bluetooth</a> </li>
-                          
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/firmware">firmware</a> </li>
-                          
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/driver">driver</a> </li>
-                          
-                        </ul>
-                    </div>
-                    <div class="tags">
-                        <ul>
-                          
-                          
-                        </ul>
-                    </div>
-                </div>
+                </ul>
             </div>
-            <div class="markdown">
-                
-    
-    <p>I have a desktop with Linux installed on it and i would like to add bluetooth adapter for it. This is my Linux version</p>
-<pre><code>➜ uname -v -r   
-5.8.0-55-generic #62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021
-</code></pre><p>So i decided to bought
-this &ldquo;ORICO BTA508 USB Bluetooth 5.0 Dongle BTA 508 BTA-508 Adapter - Hitam&rdquo; from <a href="https://www.tokopedia.com/clickandgo/orico-bta508-usb-bluetooth-5-0-dongle-bta-508-bta-508-adapter-hitam">Tokopedia</a>. But, the only official driver/firmware is for Windows.</p>
-<p>Then, how about Linux ? To solve this question, we need to know which chip the bluetooth uses and install a custom firmware/driver.</p>
-<p>Use this command to check what chips the bluetooth adapter use</p>
-<pre><code>dmesg | grep -i Bluetooth
-</code></pre><p>The output should looks like this</p>
-<pre><code>[    1.810236] usb 1-4.2: Product: Bluetooth Radio
-...
-[    3.546498] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_fw.bin
-[    3.551034] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_config.bin
-...
-</code></pre><p>This line <code>hci0: RTL: loading rtl_bt/rtl8761b_fw.bin</code> shows us, that the chip is <code>rtl8761b</code> and it need <code>rtl8761b_fw</code> firmware/driver.
-So i google <code>rtl8761b_fw</code> and found an article from <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=294634">raspberry forum</a> with the same question.</p>
-<p>But, to be sure i look up to it once again and found this arch linux <a href="https://aur.archlinux.org/packages/rtl8761b-fw/">post</a>. After i read from arch linux post, i decided to follow it. So, i download the driver from the <a href="https://mpow.s3-us-west-1.amazonaws.com/mpow_BH519A_driver+for+Linux.7z">source</a> mention in the article and follow the steps from the raspberry forum article as follows:</p>
-<ol>
-<li>Extract the driver</li>
-<li>Copy the drivers</li>
-</ol>
-<pre><code>sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_fw /lib/firmware/rtl_bt/rtl8761b_fw.bin
-
-sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_config /lib/firmware/rtl_bt/rtl8761b_config.bin
-</code></pre><ol start="3">
-<li>Reboot</li>
-</ol>
-<p>Thats it, when i check on bluetooth manager, it works</p>
-
-
-                <br>
-            </div>
-            
-            
-                <div class="navigation">
-                    
-                    <div>
-                        <img class="icon" src="https://fahmifan.github.io/img/back.svg" alt="back" />
-                        <a href="https://fahmifan.github.io/blog/setup-caddy-web-server/">Setup Caddy Web Server</a>
-                    </div>
-                    
-                    <div style="width: 100%;"></div>
-                    
-                    <div>
-                        <a href="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/">What is LRU Cache And How It Works ?</a>
-                        <img class="icon" src="https://fahmifan.github.io/img/next.svg" alt="next" />
-                    </div>
-                    
-                </div>
-            
-            <br>
-            
-            <div class="disqus">
-                <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "https-fahmifan-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
-            
-
-            
-
-            
         </div>
     </div>
 </div>
-
-
-
 <div class="footer column">
     <div class="container">
 

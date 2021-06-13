@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/" />
-<meta property="og:title" content="Setup Bluetooth Adapter on Linux" />
-<meta property="twitter:title" content="Setup Bluetooth Adapter on Linux">
+<meta property="og:url" content="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/" />
+<meta property="og:title" content="What is LRU Cache And How It Works ?" />
+<meta property="twitter:title" content="What is LRU Cache And How It Works ?">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Setup Bluetooth Adapter on Linux 
+     fahmifan - What is LRU Cache And How It Works ? 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/">
+<link rel="canonical" href="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/">
 
 
 <style media="screen">
@@ -1100,27 +1100,27 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 <div class="title-container">
                     <div class="page-heading">
 
-    Setup Bluetooth Adapter on Linux
+    What is LRU Cache And How It Works ?
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Wed Jun 9 2021 06:52:16 WIB">Jun 9, 2021</div>
+                    <div class="date" title="Sun Jun 13 2021 10:24:35 WIB">Jun 13, 2021</div>
                     
                         
                     
-                    <div class="reading-time middot">2 minute read</div>
+                    <div class="reading-time middot">5 minute read</div>
                     <div class="tags">
                         <ul>
                           
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/linux">linux</a> </li>
+                            <li class="middot"><a href="https://fahmifan.github.io/tags/lru">lru</a> </li>
                           
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/bluetooth">bluetooth</a> </li>
+                            <li class="middot"><a href="https://fahmifan.github.io/tags/go">go</a> </li>
                           
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/firmware">firmware</a> </li>
+                            <li class="middot"><a href="https://fahmifan.github.io/tags/cache">cache</a> </li>
                           
-                            <li class="middot"><a href="https://fahmifan.github.io/tags/driver">driver</a> </li>
+                            <li class="middot"><a href="https://fahmifan.github.io/tags/concurrent">concurrent</a> </li>
                           
                         </ul>
                     </div>
@@ -1135,34 +1135,245 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    <p>I have a desktop with Linux installed on it and i would like to add bluetooth adapter for it. This is my Linux version</p>
-<pre><code>➜ uname -v -r   
-5.8.0-55-generic #62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021
-</code></pre><p>So i decided to bought
-this &ldquo;ORICO BTA508 USB Bluetooth 5.0 Dongle BTA 508 BTA-508 Adapter - Hitam&rdquo; from <a href="https://www.tokopedia.com/clickandgo/orico-bta508-usb-bluetooth-5-0-dongle-bta-508-bta-508-adapter-hitam">Tokopedia</a>. But, the only official driver/firmware is for Windows.</p>
-<p>Then, how about Linux ? To solve this question, we need to know which chip the bluetooth uses and install a custom firmware/driver.</p>
-<p>Use this command to check what chips the bluetooth adapter use</p>
-<pre><code>dmesg | grep -i Bluetooth
-</code></pre><p>The output should looks like this</p>
-<pre><code>[    1.810236] usb 1-4.2: Product: Bluetooth Radio
-...
-[    3.546498] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_fw.bin
-[    3.551034] Bluetooth: hci0: RTL: loading rtl_bt/rtl8761b_config.bin
-...
-</code></pre><p>This line <code>hci0: RTL: loading rtl_bt/rtl8761b_fw.bin</code> shows us, that the chip is <code>rtl8761b</code> and it need <code>rtl8761b_fw</code> firmware/driver.
-So i google <code>rtl8761b_fw</code> and found an article from <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=294634">raspberry forum</a> with the same question.</p>
-<p>But, to be sure i look up to it once again and found this arch linux <a href="https://aur.archlinux.org/packages/rtl8761b-fw/">post</a>. After i read from arch linux post, i decided to follow it. So, i download the driver from the <a href="https://mpow.s3-us-west-1.amazonaws.com/mpow_BH519A_driver+for+Linux.7z">source</a> mention in the article and follow the steps from the raspberry forum article as follows:</p>
-<ol>
-<li>Extract the driver</li>
-<li>Copy the drivers</li>
-</ol>
-<pre><code>sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_fw /lib/firmware/rtl_bt/rtl8761b_fw.bin
+    <h1 id="what-is-lru-cache">What is LRU cache</h1>
+<p>A cache is a way to store a data that accessed frequetnly and need to be fast.
+We can use cache to store a result from a computation or result of SQL query. Cache usually stored in memory with key-value style to make sure it fast to store item and accessed.</p>
+<p>One of the cache algorithm is LRU or <em>Least Recently Used</em>.
+LRU will limit the memory usage by gives maximum items that can be stored. When there is new item to be store and it already reachs the limit, it discards the least used item.</p>
+<h1 id="how-to-make-lru-cache-in-go">How to make LRU Cache in GO</h1>
+<blockquote>
+<p>TLDR</p>
+<p>Check the full code in this repo</p>
+<ul>
+<li><a href="https://github.com/fahmifan/lrucache/tree/lru-no-concurrency">lrucache (non concurrent)</a></li>
+<li><a href="https://github.com/fahmifan/lrucache">lrucache (concurrent)</a></li>
+</ul>
+</blockquote>
+<p>There is two main component in LRU cache, those are <code>Queue</code> and <code>Hash Map</code>. The <code>Queue</code> is used to store the items that implemented in linked list, while the <code>Hash Map</code> is used to make the complexity <code>O(1)</code> when accessed.</p>
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/queue-and-hash.png" src="https://fahmifan.github.io/photos/lru-cache/low/queue-and-hash.png" alt="Queue & Hash Map"></p></figure>
+<h2 id="creating-queue">Creating Queue</h2>
+<blockquote>
+<p>Disclaimer</p>
+<p>The queue I implemented is based on my opinion, it may not be the &ldquo;right&rdquo; one :)</p>
+</blockquote>
+<p>We need to create a struct for the cache item, a linked list node, and the queue.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Queue</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">head</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+	<span style="color:#a6e22e">tail</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+}
 
-sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_config /lib/firmware/rtl_bt/rtl8761b_config.bin
-</code></pre><ol start="3">
-<li>Reboot</li>
-</ol>
-<p>Thats it, when i check on bluetooth manager, it works</p>
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Node</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">item</span> <span style="color:#a6e22e">Item</span>
+	<span style="color:#a6e22e">next</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+	<span style="color:#a6e22e">prev</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+}
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Item</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">Key</span>   <span style="color:#66d9ef">string</span>
+    <span style="color:#75715e">// Value is used to store an item
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Value</span> <span style="color:#66d9ef">interface</span>{}
+}
+</code></pre></div><p>We will create three methods for the queue <code>InsertFirst</code>, <code>RemoveLast</code> and <code>RemoveNode</code>.</p>
+<p>The structure of the Node. It has three parts, <code>prev</code>, <code>value</code>, and <code>next</code>. The <code>prev</code> and <code>next</code> are pointers to an adjecent node. The <code>value</code> is an <code>interface{}</code> that can hold any data types.
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/node.png" src="https://fahmifan.github.io/photos/lru-cache/low/node.png" alt="a node"></p></figure>
+<p>These are algorithm and code for <code>InsertFirst</code>
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/insert-first-algo.png" src="https://fahmifan.github.io/photos/lru-cache/low/insert-first-algo.png" alt="insert first algorithm"></p></figure>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// insert a node into the first of the queue
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">InsertFirst</span>(<span style="color:#a6e22e">newHead</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isEmpty</span>() {
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">newHead</span>
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> = <span style="color:#a6e22e">newHead</span>
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#a6e22e">oldHead</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>
+	<span style="color:#a6e22e">newHead</span>.<span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">oldHead</span>
+	<span style="color:#a6e22e">oldHead</span>.<span style="color:#a6e22e">prev</span> = <span style="color:#a6e22e">newHead</span>
+	<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">newHead</span>
+}
+</code></pre></div><p>These are algorithm and code for <code>RemoveLast</code>
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/remove-last-algo.png" src="https://fahmifan.github.io/photos/lru-cache/low/remove-last-algo.png" alt="remove last"></p></figure>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// remove a node from the last queue
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">RemoveLast</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span> {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isEmpty</span>() {
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isOne</span>() {
+		<span style="color:#a6e22e">last</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span>
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> = <span style="color:#66d9ef">nil</span>
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#66d9ef">nil</span>
+		<span style="color:#a6e22e">last</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">last</span>
+	}
+
+	<span style="color:#a6e22e">oldLast</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span>
+	<span style="color:#a6e22e">newLast</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span>.<span style="color:#a6e22e">prev</span>
+	<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> = <span style="color:#a6e22e">newLast</span>
+	<span style="color:#a6e22e">oldLast</span>.<span style="color:#a6e22e">breakLinks</span>()
+	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">oldLast</span>
+}
+</code></pre></div><p>These are algorithm and code for <code>RemoveNode</code>
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/remove-node-0.png" src="https://fahmifan.github.io/photos/lru-cache/low/remove-node-0.png" alt="remove node 0"></figure>
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://fahmifan.github.io/photos/lru-cache/remove-node-1.png" src="https://fahmifan.github.io/photos/lru-cache/low/remove-node-1.png" alt="remove node 2"></p></figure>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// remove a node from any position in the queue
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">RemoveNode</span>(<span style="color:#a6e22e">node</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isEmpty</span>() {
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isOne</span>() {
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#75715e">// node is first in the queue with following N-nodes
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">node</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> {
+		<span style="color:#75715e">// new head is the next in the queue
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">next</span>
+		<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#75715e">// node is the last in the queue with previos N-nodes
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">node</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> {
+		<span style="color:#75715e">// new tail is the one before the node
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> = <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">prev</span>
+		<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#75715e">// node is in the middle of the queue
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">after</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">next</span>
+	<span style="color:#a6e22e">before</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">prev</span>
+	<span style="color:#75715e">// link the before &amp; after
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">before</span>.<span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">after</span>
+	<span style="color:#a6e22e">after</span>.<span style="color:#a6e22e">prev</span> = <span style="color:#a6e22e">before</span>
+	<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+}
+</code></pre></div><p>Helper methods for the <code>Queue</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">isEmpty</span>() <span style="color:#66d9ef">bool</span> {
+	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">isOne</span>() <span style="color:#66d9ef">bool</span> {
+	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span>
+}
+</code></pre></div><p>The <code>breakLinks</code> method are implemented as follows</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// set next &amp; prev to nil
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>) <span style="color:#a6e22e">breakLinks</span>() {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">next</span> = <span style="color:#66d9ef">nil</span>
+	<span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">prev</span> = <span style="color:#66d9ef">nil</span>
+}
+</code></pre></div><h2 id="creating-lrucacher">Creating LRUCacher</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// LRUCacher not concurrent safe
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">LRUCacher</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">queue</span>       <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>
+	<span style="color:#a6e22e">hash</span>        <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+	<span style="color:#a6e22e">MaxSize</span>     <span style="color:#66d9ef">int</span>
+	<span style="color:#a6e22e">count</span> <span style="color:#66d9ef">int</span>
+}
+</code></pre></div><p>Codes for Put</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Put set new or replace existing item
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">l</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">LRUCacher</span>) <span style="color:#a6e22e">Put</span>(<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{}) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">MaxSize</span> &lt; <span style="color:#ae81ff">1</span> {
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">MaxSize</span> = <span style="color:#a6e22e">DefaultMaxSize</span>
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span> = <span style="color:#a6e22e">NewQueue</span>()
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span> = make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>)
+	}
+
+	<span style="color:#a6e22e">item</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Item</span>{
+		<span style="color:#a6e22e">Key</span>:   <span style="color:#a6e22e">key</span>,
+		<span style="color:#a6e22e">Value</span>: <span style="color:#a6e22e">value</span>,
+	}
+
+	<span style="color:#75715e">// if key already exist just replace the cache item
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">oldNode</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span>[<span style="color:#a6e22e">key</span>]
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ok</span> {
+		<span style="color:#a6e22e">oldNode</span>.<span style="color:#a6e22e">item</span> = <span style="color:#a6e22e">item</span>
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#a6e22e">node</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Node</span>{<span style="color:#a6e22e">item</span>: <span style="color:#a6e22e">item</span>}
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queueIsFull</span>() {
+		<span style="color:#a6e22e">last</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">RemoveLast</span>()
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">removeItem</span>(<span style="color:#a6e22e">last</span>.<span style="color:#a6e22e">item</span>)
+
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span>[<span style="color:#a6e22e">key</span>] = <span style="color:#a6e22e">node</span>
+		<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">InsertFirst</span>(<span style="color:#a6e22e">node</span>)
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span>[<span style="color:#a6e22e">key</span>] = <span style="color:#a6e22e">node</span>
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">InsertFirst</span>(<span style="color:#a6e22e">node</span>)
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">count</span><span style="color:#f92672">++</span>
+}
+</code></pre></div><p>Codes for Get</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">l</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">LRUCacher</span>) <span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">interface</span>{} {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+	}
+
+	<span style="color:#a6e22e">val</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span>[<span style="color:#a6e22e">key</span>]
+	<span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">ok</span> {
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+	}
+
+	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">val</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">Value</span>
+}
+</code></pre></div><p>Codes for Del</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">l</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">LRUCacher</span>) <span style="color:#a6e22e">Del</span>(<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">interface</span>{} {
+	<span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span>[<span style="color:#a6e22e">key</span>]
+	<span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">ok</span> {
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+	}
+
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">RemoveNode</span>(<span style="color:#a6e22e">node</span>)
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">removeItem</span>(<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">item</span>)
+    <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">count</span><span style="color:#f92672">--</span>
+	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">Value</span>
+}
+</code></pre></div><h1 id="notes-on-implement-synchronization-for-concurrency">Notes on Implement Synchronization for Concurrency</h1>
+<p>The previous codes works for non concurrent usage, because when accessing &amp; writing to the hash map or queue, there are needs for lock and synchronization. Also keep in minds, that adding synchronization will impact the performance.</p>
+<p>We can use <code>mutex</code> for synchronization. In Go, there are two types of mutex, <code>Mutex</code> and <code>RWMutex</code>. The <code>Mutex</code> is general purpose for locking only one goroutine that has access into a resource. The <code>RWMutex</code> has two locking mechanism, First is <code>RLock</code> that can be hold by multiple gorutines and is used for reading. Second is <code>Lock</code> that can only be hold by one goroutine and is used for writng.</p>
+<p>I use two mutex for <code>LRUCacher</code>, <code>hashMutex</code> for access &amp; mutating <code>hash</code> and <code>countMutex</code> when mutate the <code>count</code>. Also, to help detecting race condition, i use <code>-race</code> flag when running go test</p>
+<pre><code>go test -race ./...
+</code></pre><p>The rest of the code can be checked in this repo <a href="https://github.com/fahmifan/lrucache">lrucache</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">LRUCacher</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">maxSize</span> <span style="color:#66d9ef">int64</span>
+
+	<span style="color:#a6e22e">queue</span>      <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>
+	<span style="color:#a6e22e">count</span>      <span style="color:#66d9ef">int64</span>
+	<span style="color:#a6e22e">countMutex</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>
+
+	<span style="color:#a6e22e">hash</span>      <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>
+	<span style="color:#a6e22e">hashMutex</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>
+}
+</code></pre></div><p>The benchmark</p>
+<pre><code>go test -benchmem -run=^$ -bench ^(BenchmarkLRUCacher)$ github.com/fahmifan/lrucache
+
+goos: linux
+goarch: amd64
+pkg: github.com/fahmifan/lrucache
+cpu: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+BenchmarkLRUCacher/Put-4         	 2777412	       415.7 ns/op	      89 B/op	       4 allocs/op
+BenchmarkLRUCacher/Get-4         	 9061254	       130.3 ns/op	      16 B/op	       1 allocs/op
+BenchmarkLRUCacher/Del-4         	11411762	       105.7 ns/op	      12 B/op	       1 allocs/op
+PASS
+ok  	github.com/fahmifan/lrucache	4.228s
+</code></pre><p>That&rsquo;s the LRU Cache on how you can implement it in Go :)</p>
 
 
                 <br>
@@ -1173,15 +1384,10 @@ sudo cp -iv 20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/rtl8761b_
                     
                     <div>
                         <img class="icon" src="https://fahmifan.github.io/img/back.svg" alt="back" />
-                        <a href="https://fahmifan.github.io/blog/setup-caddy-web-server/">Setup Caddy Web Server</a>
+                        <a href="https://fahmifan.github.io/blog/setup-bluetooth-adapter-on-linux/">Setup Bluetooth Adapter on Linux</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
-                    
-                    <div>
-                        <a href="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/">What is LRU Cache And How It Works ?</a>
-                        <img class="icon" src="https://fahmifan.github.io/img/next.svg" alt="next" />
-                    </div>
                     
                 </div>
             
