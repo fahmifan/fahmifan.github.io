@@ -1110,7 +1110,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     
                         
                     
-                    <div class="reading-time middot">5 minute read</div>
+                    <div class="reading-time middot">6 minute read</div>
                     <div class="tags">
                         <ul>
                           
@@ -1251,6 +1251,36 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 	<span style="color:#a6e22e">after</span>.<span style="color:#a6e22e">prev</span> = <span style="color:#a6e22e">before</span>
 	<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
 }
+</code></pre></div><p>The code for <code>MoveToFirst</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">MoveToFirst</span>(<span style="color:#a6e22e">node</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Node</span>) {
+	<span style="color:#75715e">// no need to move, there is one or none in the queue
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isEmpty</span>() <span style="color:#f92672">||</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">isOne</span>() {
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">node</span> {
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">node</span> {
+		<span style="color:#a6e22e">beforeTail</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">prev</span>
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> = <span style="color:#a6e22e">beforeTail</span>
+		<span style="color:#a6e22e">beforeTail</span>.<span style="color:#a6e22e">next</span> = <span style="color:#66d9ef">nil</span>
+
+		<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+		<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>
+		<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">node</span>
+		<span style="color:#66d9ef">return</span>
+	}
+
+	<span style="color:#a6e22e">nodeBefore</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">prev</span>
+	<span style="color:#a6e22e">nodeAfter</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">next</span>
+	<span style="color:#a6e22e">nodeBefore</span>.<span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">nodeAfter</span>
+	<span style="color:#a6e22e">nodeAfter</span>.<span style="color:#a6e22e">prev</span> = <span style="color:#a6e22e">nodeBefore</span>
+	<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">breakLinks</span>()
+	<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span>
+	<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">node</span>
+}
 </code></pre></div><p>Helper methods for the <code>Queue</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">q</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Queue</span>) <span style="color:#a6e22e">isEmpty</span>() <span style="color:#66d9ef">bool</span> {
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">head</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">tail</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span>
@@ -1318,7 +1348,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">InsertFirst</span>(<span style="color:#a6e22e">node</span>)
 	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">count</span><span style="color:#f92672">++</span>
 }
-</code></pre></div><p>Codes for Get</p>
+</code></pre></div><p>The recently called item, will be move to the first of the queue</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">l</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">LRUCacher</span>) <span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">interface</span>{} {
 	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">hash</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
 		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
@@ -1328,6 +1358,8 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 	<span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">ok</span> {
 		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
 	}
+
+	<span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">queue</span>.<span style="color:#a6e22e">MoveToFirst</span>(<span style="color:#a6e22e">val</span>)
 
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">val</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">Value</span>
 }
