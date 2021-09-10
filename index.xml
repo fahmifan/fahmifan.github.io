@@ -12,6 +12,26 @@
     
     
     <item>
+      <title>Automate Resizing Bulk Images Using Libvips</title>
+      <link>https://fahmifan.github.io/blog/automate-resizing-bulk-images-using-libvips/</link>
+      <pubDate>Sat, 28 Aug 2021 19:09:03 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/automate-resizing-bulk-images-using-libvips/</guid>
+      <description>With the growing popularity of ShopeeFood, many restaurants were applying for partnership with them, included my relative&amp;rsquo;s Padang restaurant. But, their registration was not easy. They need a photo for each menu to be in a format of 720x720 px. For a Padang restaurant with over 50 menus and unfortunately the restaurant&amp;rsquo;s menu photos were in different sizes.
+I was too lazy to resized them manually. At first, I search for a service that could resize an image.</description>
+    </item>
+    
+    <item>
+      <title>Log Monitoring Using Grafan Loki</title>
+      <link>https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/</link>
+      <pubDate>Sat, 24 Jul 2021 10:30:22 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/</guid>
+      <description>In this article, we will cover how to monitor log using Grafana and Loki.
+ in the past, when i got an error, i had to SSH to the server and check the log but, it&amp;rsquo;s not easy to query the error so, i&amp;rsquo;m looking for a way to monitor the logs in my experience you can use ELK stack or Sentry to monitor the log but from my case, where i have limited resources, those options are not viable.</description>
+    </item>
+    
+    <item>
       <title>Install Veikk Driver Linux</title>
       <link>https://fahmifan.github.io/blog/install-veikk-driver-linux/</link>
       <pubDate>Mon, 14 Jun 2021 05:52:08 +0700</pubDate>

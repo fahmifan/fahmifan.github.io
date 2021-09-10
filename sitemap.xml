@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fahmifan.github.io/blog/automate-resizing-bulk-images-using-libvips/</loc>
+    <lastmod>2021-08-28T19:09:03+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fahmifan.github.io/blog/</loc>
-    <lastmod>2021-06-14T05:52:08+07:00</lastmod>
+    <lastmod>2021-08-28T19:09:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/</loc>
+    <lastmod>2021-07-24T10:30:22+07:00</lastmod>
   </url>
   
   <url>

@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/blog/install-veikk-driver-linux/" />
-<meta property="og:title" content="Install Veikk Driver Linux" />
-<meta property="twitter:title" content="Install Veikk Driver Linux">
+<meta property="og:url" content="https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/" />
+<meta property="og:title" content="Log Monitoring Using Grafan Loki" />
+<meta property="twitter:title" content="Log Monitoring Using Grafan Loki">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Install Veikk Driver Linux 
+     fahmifan - Log Monitoring Using Grafan Loki 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/blog/install-veikk-driver-linux/">
+<link rel="canonical" href="https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/">
 
 
 <style media="screen">
@@ -1100,13 +1100,13 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                 <div class="title-container">
                     <div class="page-heading">
 
-    Install Veikk Driver Linux
+    Log Monitoring Using Grafan Loki
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Mon Jun 14 2021 05:52:08 WIB">Jun 14, 2021</div>
+                    <div class="date" title="Sat Jul 24 2021 10:30:22 WIB">Jul 24, 2021</div>
                     
                         
                     
@@ -1127,10 +1127,36 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    <p>I decided to buy a Veikk pen tablet S640, but it&rsquo;s drivers only for Mac and Windows.
-And fortunately, there are <a href="https://github.com/jlam55555/veikk-linux-driver">driver</a> and <a href="https://github.com/jlam55555/veikk-linux-driver-gui">GUI tools</a> for the S640 from <a href="https://github.com/jlam55555">jlam55555</a>.</p>
-<p>Following the installation guides, voila! enjoy your pen tablet on Linux.</p>
-<p><img src="https://fahmifan.github.io/photos/veikk-driver/enjoy.png" alt="enjoy"></p>
+    <p>In this article, we will cover how to monitor log using Grafana and Loki.</p>
+<ul>
+<li>in the past, when i got an error, i had to SSH to the server and check the log</li>
+<li>but, it&rsquo;s not easy to query the error</li>
+<li>so, i&rsquo;m looking for a way to monitor the logs</li>
+<li>in my experience you can use ELK stack or Sentry to monitor the log</li>
+<li>but from my case, where i have limited resources, those options are not viable.</li>
+<li>and then i found the Loki projects from Grafana teams.</li>
+<li>it written in Go, so i expect low resource usages</li>
+<li>and it query abiility using LogQL</li>
+<li>i try in local, and these are the tools we need
+<ul>
+<li>grafana
+<ul>
+<li>dashboard for loki</li>
+</ul>
+</li>
+<li>loki
+<ul>
+<li>the log processor</li>
+</ul>
+</li>
+<li>promtail
+<ul>
+<li>to collect &amp; forward log from services to Loki</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
                 <br>
@@ -1141,13 +1167,13 @@ And fortunately, there are <a href="https://github.com/jlam55555/veikk-linux-dri
                     
                     <div>
                         <img class="icon" src="https://fahmifan.github.io/img/back.svg" alt="back" />
-                        <a href="https://fahmifan.github.io/blog/what-is-lru-cache-and-how-it-works/">What is LRU Cache And How It Works ?</a>
+                        <a href="https://fahmifan.github.io/blog/install-veikk-driver-linux/">Install Veikk Driver Linux</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
                     
                     <div>
-                        <a href="https://fahmifan.github.io/blog/log-monitoring-using-grafan-loki/">Log Monitoring Using Grafan Loki</a>
+                        <a href="https://fahmifan.github.io/blog/automate-resizing-bulk-images-using-libvips/">Automate Resizing Bulk Images Using Libvips</a>
                         <img class="icon" src="https://fahmifan.github.io/img/next.svg" alt="next" />
                     </div>
                     
