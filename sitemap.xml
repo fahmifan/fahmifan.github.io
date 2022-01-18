@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fahmifan.github.io/journal/2021/jan-17/</loc>
+    <lastmod>2022-01-17T07:22:50+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fahmifan.github.io/journal/</loc>
+    <lastmod>2022-01-17T07:22:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fahmifan.github.io/blog/automate-resizing-bulk-images-using-libvips/</loc>
     <lastmod>2021-08-28T19:09:03+07:00</lastmod>
   </url>
