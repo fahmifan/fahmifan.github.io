@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>January 23</title>
+      <link>https://fahmifan.github.io/journal/2021/jan-23/</link>
+      <pubDate>Sun, 23 Jan 2022 19:28:06 +0700</pubDate>
+      
+      <guid>https://fahmifan.github.io/journal/2021/jan-23/</guid>
+      <description>TIL  PGTune - calculate configuration for PostgreSQL based on the maximum performance for a given hardware configuration  We input our server spec and then it will tell what the configuration we can use as starter   Jitsu : Open Source Data Integration Platform  It was a realtime data pipeline tools that has scripting capability It has a feature to track events that is emitted from an app It support JS to do data transformation built in Go   What is dbt?</description>
+    </item>
+    
+    <item>
       <title>January 17</title>
       <link>https://fahmifan.github.io/journal/2021/jan-17/</link>
       <pubDate>Mon, 17 Jan 2022 07:22:50 +0700</pubDate>

@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fahmifan" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fahmifan.github.io/journal/" />
-<meta property="og:title" content="Journal" />
-<meta property="twitter:title" content="Journal">
+<meta property="og:url" content="https://fahmifan.github.io/journal/2021/jan-23/" />
+<meta property="og:title" content="January 23" />
+<meta property="twitter:title" content="January 23">
 
     <meta property="og:image" content="https://fahmifan.github.io/img/banner.png">
     <meta property="twitter:card" content="summary_large_image">
@@ -29,10 +29,10 @@
 <title>
 
 
-     fahmifan - Journal 
+     fahmifan - January 23 
 
 </title>
-<link rel="canonical" href="https://fahmifan.github.io/journal/">
+<link rel="canonical" href="https://fahmifan.github.io/journal/2021/jan-23/">
 
 
 <style media="screen">
@@ -1049,8 +1049,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://fahmifan.github.io/journal/index.xml" rel="alternate" type="application/rss+xml" title="fahmifan" />
-
 
 </head>
 
@@ -1058,7 +1056,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <body>
 
 
-<div class="header header-home column">
+<div class="header column">
 
     <div class="container">
         
@@ -1097,33 +1095,73 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
+
+
 <div class="main column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Journal</div>
-                <ul>
-                    
-                        <li class="groupby">Jan, 2022</li>
-                        
-                            <li class="post-item">
-    <span class="meta">Jan 23, 2022</span>
-    <a href="https://fahmifan.github.io/journal/2021/jan-23/"><span>January 23</span></a>
-</li>
+            <div class="page-heading">
 
-                        
-                            <li class="post-item">
-    <span class="meta">Jan 17, 2022</span>
-    <a href="https://fahmifan.github.io/journal/2021/jan-17/"><span>January 17</span></a>
-</li>
+    January 23
 
-                        
-                    
-                </ul>
+</div>
+
+            <div class="markdown">
+                
+    
+    <h1 id="til">TIL</h1>
+<ul>
+<li><a href="https://pgtune.leopard.in.ua/?utm_source=pocket_mylist">PGTune - calculate configuration for PostgreSQL based on the maximum performance for a given hardware configuration</a>
+<ul>
+<li>We input our server spec and then it will tell what the configuration we can use as starter</li>
+</ul>
+</li>
+<li><a href="https://jitsu.com/?ref=producthunt">Jitsu : Open Source Data Integration Platform</a>
+<ul>
+<li>It was a realtime data pipeline tools that has scripting capability</li>
+<li>It has a feature to track events that is emitted from an app</li>
+<li>It support JS to do data transformation</li>
+<li>built in Go</li>
+</ul>
+</li>
+<li><a href="https://docs.getdbt.com/docs/introduction">What is dbt? | dbt Docs</a>
+<ul>
+<li>DBT is a tool that can transform data from an SQL source</li>
+<li>DBT has a Jinja template compiler, so we can add some Jinja logic into our SQL query. Example taken from the blog
+<ul>
+<li>Ref: <a href="https://blog.getdbt.com/what-exactly-is-dbt/">https://blog.getdbt.com/what-exactly-is-dbt/</a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja" data-lang="jinja">select * from <span style="color:#75715e">{{</span>ref<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;really_big_table&#39;</span><span style="color:#f92672">)</span><span style="color:#75715e">}}</span>
+
+<span style="color:#75715e">{%</span> <span style="color:#66d9ef">if</span> incremental <span style="color:#66d9ef">and</span> target.schema <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;prod&#39;</span> <span style="color:#75715e">%}</span>         
+
+    where timestamp &gt;= (select max(timestamp) from <span style="color:#75715e">{{</span>this<span style="color:#75715e">}}</span>)     
+
+<span style="color:#75715e">{%</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">%}</span>         
+
+    where timestamp &gt;= dateadd(day, -3, current_date)     
+
+<span style="color:#75715e">{%</span> <span style="color:#66d9ef">endif</span> <span style="color:#75715e">%}</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li><a href="https://www.gerritcodereview.com/index.html">Gerrit Code Review | Gerrit Code Review</a>
+<ul>
+<li>This is a code review tool used by Google</li>
+<li>Quite interesting, have many tools</li>
+<li>One of them are Go: <a href="https://go-review.googlesource.com/q/status:open+-is:wip">status:open -is:wip · Gerrit Code Review</a></li>
+</ul>
+</li>
+</ul>
+
+
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 
