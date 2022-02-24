@@ -1,0 +1,4 @@
+Sitemap: https://fahmifan.id/sitemap.xml
+
+User-agent: *
+Disallow:
