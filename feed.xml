@@ -20,7 +20,7 @@
     <updated>2022-02-24T07:00:00+07:00</updated>
     <id>https://fahmifan.id/posts/2022/feb/migrating-blog-to-11ty/</id>
     <content type="html"><![CDATA[
-      <p><img src="/images/arron-choi-kRK1Bne4xEw-unsplash.jpg" alt="Boxes waiting behind truct" title="Photo by Arron Choi on Unsplash"></p>
+      <p><picture><source type="image/webp" srcset="/images/arron-choi-kRK1Bne4xEw-unsplash-800w.webp 800w, /images/arron-choi-kRK1Bne4xEw-unsplash-1280w.webp 1280w, /images/arron-choi-kRK1Bne4xEw-unsplash-6240w.webp 6240w" sizes="(min-width: 1024px) 100vw, 50vw"><source type="image/jpeg" srcset="/images/arron-choi-kRK1Bne4xEw-unsplash-800w.jpeg 800w, /images/arron-choi-kRK1Bne4xEw-unsplash-1280w.jpeg 1280w, /images/arron-choi-kRK1Bne4xEw-unsplash-6240w.jpeg 6240w" sizes="(min-width: 1024px) 100vw, 50vw"><img alt="Photo by Arron Choi on Unsplash" title="Photo by Arron Choi on Unsplash" loading="lazy" decoding="async" src="/images/arron-choi-kRK1Bne4xEw-unsplash-800w.jpeg" width="6240" height="4160"></picture></p>
 <p>So, I migrate my blog to 11ty uses <a href="https://hylia.website/">Hylia Starter Kit</a>. The reason is, because it is more flexible and easier to customize.</p>
 <p>My old hugo blog, was using template too but, it uses the git submodule. Which is not realy easy to customize. Well hugo is faster, but I don't think I'll need it for a small blog site like this.</p>
 <p>The migration process is quite simple. First I <code>degit</code> the template using <code>npx degit github.com/hankchizljaw/hylia</code>. Then i change the site metadata like site title, author, email, favicon, etc. Then, I copy the markdown blog contents from hugo to 11ty. Also, i decided to include the images into the blog, before this I store the images in seperate github repo.</p>
@@ -321,8 +321,8 @@ Kegunaanya adalah untuk <em>decoupled</em> antar komponen sehingga tidak saling 
 Keuntungan lainnya adalah, kita bisa membuat <em>monolith</em> rasa <em>microservice</em>.
 Dalam arsitektur <em>microservice</em>, salah satu pattern yg sering dipakai adalah <em>pubsub</em>, dan kita bisa menerapkan pubsub ini dalam arsitektur <em>monolith</em> melalui <em>event bus</em>.</p>
 <p>Jika digambarkan event bus itu berbentuk seperti gambar berikut
-<img src="/images/1586077919152-event-bus.png" alt="event bus">
-Dimana ada <em>publisher</em> yang dapat mengirim sebuah pesan ke <em>Event Bus</em> dan pesan ini dapat didapatkan oleh banyak <em>subscriber</em>.</p>
+<picture><source type="image/webp" srcset="/images/1586077919152-event-bus-800w.webp 800w, /images/1586077919152-event-bus-970w.webp 970w" sizes="(min-width: 1024px) 100vw, 50vw"><source type="image/jpeg" srcset="/images/1586077919152-event-bus-800w.jpeg 800w, /images/1586077919152-event-bus-970w.jpeg 970w" sizes="(min-width: 1024px) 100vw, 50vw"><img alt="Event Bus" title="Event Bus" loading="lazy" decoding="async" src="/images/1586077919152-event-bus-800w.jpeg" width="970" height="534"></picture></p>
+<p>Dimana ada <em>publisher</em> yang dapat mengirim sebuah pesan ke <em>Event Bus</em> dan pesan ini dapat didapatkan oleh banyak <em>subscriber</em>.</p>
 <h2>Menggunakan event bus</h2>
 <p>Kita akan coba menggunakan event bus dalam program yang akan kita buat. Dan kita akan membuatnya menggunakan bahasa Go atau Golang.</p>
 <blockquote>
