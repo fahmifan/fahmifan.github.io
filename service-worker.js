@@ -1,4 +1,4 @@
-const VERSION = 'be3f-ef44-0032';
+const VERSION = '3d60-50ec-c214';
 const CACHE_KEYS = {
   PRE_CACHE: `precache-${VERSION}`,
   RUNTIME: `runtime-${VERSION}`
@@ -10,6 +10,7 @@ const EXCLUDED_URLS = [
   '.netlify',
   'https://identity.netlify.com/v1/netlify-identity-widget.js',
   'https://unpkg.com/netlify-cms@^2.9.3/dist/netlify-cms.js',
+  'https://isso.fahmifan.id',
   '/contact',
   '/thank-you'
 ];
