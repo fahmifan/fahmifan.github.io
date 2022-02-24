@@ -2389,9 +2389,9 @@ var output = "";
 try {
 var parentTemplate = null;
 output += "<div id=\"isso-thread\" class=\"[ comment ]\"></div>\n\n<script defer \n  data-isso=\"";
-output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"issoCommentUrl"), env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "env")),"issoCommentUrl"), env.opts.autoescape);
 output += "\"\n  data-isso-require-author=\"true\"\n  data-isso-require-email=\"true\"\n  data-isso-css=\"true\"\n  src=\"";
-output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"issoCommentUrl"), env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "env")),"issoCommentUrl"), env.opts.autoescape);
 output += "/js/embed.min.js\"></script>\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
