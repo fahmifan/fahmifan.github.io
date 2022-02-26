@@ -48,7 +48,7 @@ many resources on my cheap server. I already know about Commento, so I search fo
 <p>I also found <a href="https://goaccess.io/">GoAccess</a> a server-side tracker. Written in C (super fast!), feature-rich, &amp; privacy compliant.</p>
 </blockquote>
 <p>For the analytic, I choose Fathom Lite. Even if it's not actively maintained anymore, I'll still be able to maintain it to some extent. Yeah, I <a href="https://Github.com/fahmifan/fathom">forked</a> it, upgrade the Go version, and fix some accessibility issues as suggested by the Chrome Lighthouse.</p>
-<p>Deployment is easy because it is single binary &amp; uses SQLite. I just it as systemd service and put it behind a reverse proxy.</p>
+<p>Deployment is easy because it is single binary &amp; uses SQLite. I just make it as systemd service and put it behind a reverse proxy.</p>
 
     ]]></content>
   </entry>
