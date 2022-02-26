@@ -33,7 +33,7 @@ many resources on my cheap server. I already know about Commento, so I search fo
 <p>Commento is widely popular, actively maintained, has a nice UI, has a managed cloud version &amp; privacy compliant. The backend is written in Go, which is nice. But the managed version price is quite expensive for me &amp; the DB choice is only Postgres.</p>
 <p>Utterances is popular too, it uses Github issues as its backend, it's open-source, &amp; privacy compliant. But you need to have a Github account to add a comment. So, It is not good for the general audience.</p>
 <p>Isso is also popular, actively maintained, &amp; privacy compliant. The backend is written in Python, and uses SQLite for the DB. The UI is ok, I just need to style the font to match my website style.</p>
-<p>For the comment app, I choose Isso for its simplicity &amp; SQLite choice as DB. The deployment is quite easy, it comes with a prebuilt binary. So, I just deployed it as systemd service and put it behind a reverse proxy.</p>
+<p>For the comment app, I choose Isso for its simplicity &amp; SQLite choice as DB. The <a href="/tags/deployment">deployment</a> is quite easy, it comes with a prebuilt binary. So, I just deployed it as systemd service and put it behind a reverse proxy.</p>
 <h2>Analytic</h2>
 <p>For analytics I already have some choices, they are:</p>
 <ul>
