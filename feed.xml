@@ -15,6 +15,46 @@
 	
   
   <entry>
+    <title>Self-Deploy Comment and Analytic App</title>
+    <link href="https://fahmifan.id/posts/2022/feb/self-deploy-comment-and-analytics/"/>
+    <updated>2022-02-26T07:00:00+07:00</updated>
+    <id>https://fahmifan.id/posts/2022/feb/self-deploy-comment-and-analytics/</id>
+    <content type="html"><![CDATA[
+      <p><picture><source type="image/webp" srcset="/images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-300w.webp 300w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-640w.webp 640w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-800w.webp 800w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-1280w.webp 1280w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-3872w.webp 3872w" sizes="(min-width: 1024px) 100vw, 50vw"><source type="image/jpeg" srcset="/images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-300w.jpeg 300w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-640w.jpeg 640w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-800w.jpeg 800w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-1280w.jpeg 1280w, /images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-3872w.jpeg 3872w" sizes="(min-width: 1024px) 100vw, 50vw"><img alt="Photo by Étienne Beauregard-Riverin on Unsplash" title="Photo by Étienne Beauregard-Riverin on Unsplash" loading="lazy" decoding="async" src="/images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-300w.jpeg" width="3872" height="2592"></picture></p>
+<p>After <a href="/posts/2022/feb/migrating-blog-to-11ty/">Migrating My site to 11ty</a>, I decided to self-deploy the comment &amp; analytic app for this website. Why? Because it's fun to learn something new and I'd like to keep those data on my box. So, these are my review for comments &amp; analytics apps that you can self-deploy.</p>
+<h2>Comment</h2>
+<p>So, I begin by searching for the comment app. I want it to be lightweight so it won't take
+many resources on my cheap server. I already know about Commento, so I search for &quot;<em>Commento alternative open-source</em>&quot;, these the top result list:</p>
+<ul>
+<li><a href="https://commento.io/">Commento</a></li>
+<li><a href="https://utteranc.es/">Utterances</a></li>
+<li><a href="https://posativ.org/isso/">Isso</a></li>
+</ul>
+<p>Commento is widely popular, actively maintained, has a nice UI, has a managed cloud version &amp; privacy compliant. The backend is written in Go, which is nice. But the managed version price is quite expensive for me &amp; the DB choice is only Postgres.</p>
+<p>Utterances is popular too, it uses Github issues as its backend, it's open-source, &amp; privacy compliant. But you need to have a Github account to add a comment. So, It is not good for the general audience.</p>
+<p>Isso is also popular, actively maintained, &amp; privacy compliant. The backend is written in Python, and uses SQLite for the DB. The UI is ok, I just need to style the font to match my website style.</p>
+<p>For the comment app, I choose Isso for its simplicity &amp; SQLite choice as DB. The deployment is quite easy, it comes with a prebuilt binary. So, I just deployed it as systemd service and put it behind a reverse proxy.</p>
+<h2>Analytic</h2>
+<p>For analytics I already have some choices, they are:</p>
+<ul>
+<li><a href="https://umami.is/">Umami</a></li>
+<li><a href="https://plausible.io/">Plausible</a></li>
+<li><a href="https://usefathom.com/">Fathom</a></li>
+</ul>
+<p>Umami is popular &amp; widely used, actively maintain, feature-rich &amp; privacy compliant. It is written in NextJS and Prism. The UI is nice &amp; the DB choices are Postgres or MySQL.</p>
+<p>Plausible is quite the same as Umami, but it offered a SaaS version. It is written in Elixir, has modern UI, and It should be very performant. The DB choices are Clickhouse or Postgres.</p>
+<p>Fathom has two versions the lite and pro. The lite version is the old Fathom, rarely maintained, written in Go and Preact, and the DB choices are SQLite or Postgres. The pro version is a SaaS &amp; has more features compared to the lite version.</p>
+<blockquote>
+<p>I also found <a href="https://goaccess.io/">GoAccess</a> a server-side tracker. Written in C (super fast!), feature-rich, &amp; privacy compliant.</p>
+</blockquote>
+<p>For the analytic, I choose Fathom Lite. Even if it's not actively maintained anymore, I'll still be able to maintain it to some extent. Yeah, I <a href="https://Github.com/fahmifan/fathom">forked</a> it, upgrade the Go version, and fix some accessibility issues as suggested by the Chrome Lighthouse.</p>
+<p>Deployment is easy because it is single binary &amp; uses SQLite. I just it as systemd service and put it behind a reverse proxy.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>Migrating Blog to 11ty</title>
     <link href="https://fahmifan.id/posts/2022/feb/migrating-blog-to-11ty/"/>
     <updated>2022-02-24T07:00:00+07:00</updated>
