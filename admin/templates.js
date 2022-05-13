@@ -350,6 +350,142 @@ root: root
 
 })();
 })();
+(function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["layouts/book-excerpt.njk"] = (function() {
+function root(env, context, frame, runtime, cb) {
+var lineno = 0;
+var colno = 0;
+var output = "";
+try {
+var parentTemplate = null;
+env.getTemplate("layouts/base.njk", true, "layouts/book-excerpt.njk", false, function(t_3,t_2) {
+if(t_3) { cb(t_3); return; }
+parentTemplate = t_2
+for(var t_1 in parentTemplate.blocks) {
+context.addBlock(t_1, parentTemplate.blocks[t_1]);
+}
+output += "\n\n";
+output += "\n";
+var t_4;
+t_4 = runtime.contextOrFrameLookup(context, frame, "title");
+frame.set("introHeading", t_4, true);
+if(frame.topLevel) {
+context.setVariable("introHeading", t_4);
+}
+if(frame.topLevel) {
+context.addExport("introHeading", t_4);
+}
+output += "\n";
+var t_5;
+t_5 = (function() {
+var output = "";
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "content")), env.opts.autoescape);
+;
+return output;
+})()
+;
+frame.set("introSummary", t_5, true);
+if(frame.topLevel) {
+context.setVariable("introSummary", t_5);
+}
+if(frame.topLevel) {
+context.addExport("introSummary", t_5);
+}
+output += "\n\n";
+output += "\n";
+var t_6;
+t_6 = "Excerpt Collection";
+frame.set("postListHeading", t_6, true);
+if(frame.topLevel) {
+context.setVariable("postListHeading", t_6);
+}
+if(frame.topLevel) {
+context.addExport("postListHeading", t_6);
+}
+output += "\n";
+var t_7;
+t_7 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "collections")),"book_excerpts");
+frame.set("postListItems", t_7, true);
+if(frame.topLevel) {
+context.setVariable("postListItems", t_7);
+}
+if(frame.topLevel) {
+context.addExport("postListItems", t_7);
+}
+output += "\n\n";
+(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("content"))(env, context, frame, runtime, function(t_9,t_8) {
+if(t_9) { cb(t_9); return; }
+output += t_8;
+output += "\n";
+if(parentTemplate) {
+parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
+} else {
+cb(null, output);
+}
+})});
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+function b_content(env, context, frame, runtime, cb) {
+var lineno = 10;
+var colno = 3;
+var output = "";
+try {
+var frame = frame.push(true);
+output += "\n  <main id=\"main-content\" tabindex=\"-1\">\n    ";
+var tasks = [];
+tasks.push(
+function(callback) {
+env.getTemplate("partials/components/intro.njk", false, "layouts/book-excerpt.njk", false, function(t_11,t_10) {
+if(t_11) { cb(t_11); return; }
+callback(null,t_10);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_13,t_12) {
+if(t_13) { cb(t_13); return; }
+callback(null,t_12);});
+});
+tasks.push(
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n    ";
+var tasks = [];
+tasks.push(
+function(callback) {
+env.getTemplate("partials/components/post-list.njk", false, "layouts/book-excerpt.njk", false, function(t_15,t_14) {
+if(t_15) { cb(t_15); return; }
+callback(null,t_14);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_17,t_16) {
+if(t_17) { cb(t_17); return; }
+callback(null,t_16);});
+});
+tasks.push(
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n  </main>\n";
+cb(null, output);
+})});
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+return {
+b_content: b_content,
+root: root
+};
+
+})();
+})();
 (function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["layouts/contact.njk"] = (function() {
 function root(env, context, frame, runtime, cb) {
 var lineno = 0;
@@ -1007,7 +1143,7 @@ frame = frame.pop();
 output += "\n              </ul>\n            </div>\n          </div>\n        </footer>\n      ";
 ;
 }
-output += "\n    </article>\n";
+output += "\n    </article>\n  </main>\n";
 cb(null, output);
 });
 } catch (e) {
