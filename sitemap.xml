@@ -132,6 +132,11 @@
         </url>
     
         <url>
+            <loc>https://fahmifan.id/posts/2024/01/benchmarking-golang-slice-allocation/</loc>
+            <lastmod>2024-02-12T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://fahmifan.id/archive/</loc>
             <lastmod>2024-03-07T03:09:25.288Z</lastmod>
         </url>
@@ -207,6 +212,31 @@
         </url>
     
         <url>
+            <loc>https://fahmifan.id/tags/BDC/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Seminar/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Conference/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/App/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Developement/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://fahmifan.id/tags/Ideas/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
@@ -223,6 +253,51 @@
     
         <url>
             <loc>https://fahmifan.id/tags/Android/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Youtube/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Downloader/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/youtube-dl/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Worker/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Programming/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/DDD/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Konsep/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Event Bus/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Tutorial/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
@@ -262,56 +337,6 @@
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/BDC/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Seminar/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Conference/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Test/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Bootcamp/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Tokopedia/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Devcamp/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Youtube/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Downloader/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/youtube-dl/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://fahmifan.id/tags/Hugo/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
@@ -333,6 +358,36 @@
     
         <url>
             <loc>https://fahmifan.id/tags/Submodule/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Project/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Contest/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Test/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Bootcamp/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Tokopedia/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/Devcamp/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
@@ -362,16 +417,6 @@
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/DDD/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Konsep/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://fahmifan.id/tags/Personal Development/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
@@ -382,22 +427,22 @@
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/Worker/</loc>
+            <loc>https://fahmifan.id/tags/lru/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/App/</loc>
+            <loc>https://fahmifan.id/tags/go/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/Programming/</loc>
+            <loc>https://fahmifan.id/tags/cache/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/Developement/</loc>
+            <loc>https://fahmifan.id/tags/concurrent/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
@@ -422,12 +467,17 @@
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/Project/</loc>
+            <loc>https://fahmifan.id/tags/information/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/Contest/</loc>
+            <loc>https://fahmifan.id/tags/self improvement/</loc>
+            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://fahmifan.id/tags/fomo/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
@@ -448,31 +498,6 @@
     
         <url>
             <loc>https://fahmifan.id/tags/caddy/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Event Bus/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/Tutorial/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/information/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/self improvement/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/fomo/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
@@ -512,22 +537,17 @@
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/lru/</loc>
+            <loc>https://fahmifan.id/tags/golang/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/go/</loc>
+            <loc>https://fahmifan.id/tags/slice/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
         <url>
-            <loc>https://fahmifan.id/tags/cache/</loc>
-            <lastmod>2024-03-07T03:09:25.364Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://fahmifan.id/tags/concurrent/</loc>
+            <loc>https://fahmifan.id/tags/benchmark/</loc>
             <lastmod>2024-03-07T03:09:25.364Z</lastmod>
         </url>
     
